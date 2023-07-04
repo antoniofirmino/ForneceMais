@@ -13,6 +13,10 @@
 		C5B8720A2A4DA62B009B5BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B872082A4DA62B009B5BF3 /* Main.storyboard */; };
 		C5B8720C2A4DA62C009B5BF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B8720B2A4DA62C009B5BF3 /* Assets.xcassets */; };
 		C5B8720F2A4DA62C009B5BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B8720D2A4DA62C009B5BF3 /* LaunchScreen.storyboard */; };
+		FB0AD7742A52F60D000B47BE /* ViewControllerConta.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AD7732A52F60D000B47BE /* ViewControllerConta.swift */; };
+		FB99535A2A5440D50034C4D0 /* ContaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9953592A5440D50034C4D0 /* ContaCell.swift */; };
+		FB99535C2A545DE60034C4D0 /* ContaCellLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99535B2A545DE60034C4D0 /* ContaCellLog.swift */; };
+		FB99535E2A545DF80034C4D0 /* ContaCellAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99535D2A545DF80034C4D0 /* ContaCellAccount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		C5B8720B2A4DA62C009B5BF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5B8720E2A4DA62C009B5BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5B872102A4DA62C009B5BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB0AD7732A52F60D000B47BE /* ViewControllerConta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerConta.swift; sourceTree = "<group>"; };
+		FB9953592A5440D50034C4D0 /* ContaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaCell.swift; sourceTree = "<group>"; };
+		FB99535B2A545DE60034C4D0 /* ContaCellLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaCellLog.swift; sourceTree = "<group>"; };
+		FB99535D2A545DF80034C4D0 /* ContaCellAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaCellAccount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 				C5B872022A4DA62B009B5BF3 /* AppDelegate.swift */,
 				C5B872042A4DA62B009B5BF3 /* SceneDelegate.swift */,
 				C5B872062A4DA62B009B5BF3 /* ViewController.swift */,
+				FB0AD7732A52F60D000B47BE /* ViewControllerConta.swift */,
+				FB99535D2A545DF80034C4D0 /* ContaCellAccount.swift */,
+				FB9953592A5440D50034C4D0 /* ContaCell.swift */,
+				FB99535B2A545DE60034C4D0 /* ContaCellLog.swift */,
 				C5B872082A4DA62B009B5BF3 /* Main.storyboard */,
 				C5B8720B2A4DA62C009B5BF3 /* Assets.xcassets */,
 				C5B8720D2A4DA62C009B5BF3 /* LaunchScreen.storyboard */,
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0AD7742A52F60D000B47BE /* ViewControllerConta.swift in Sources */,
 				C5B872072A4DA62B009B5BF3 /* ViewController.swift in Sources */,
 				C5B872032A4DA62B009B5BF3 /* AppDelegate.swift in Sources */,
 				C5B872052A4DA62B009B5BF3 /* SceneDelegate.swift in Sources */,
+				FB99535E2A545DF80034C4D0 /* ContaCellAccount.swift in Sources */,
+				FB99535C2A545DE60034C4D0 /* ContaCellLog.swift in Sources */,
+				FB99535A2A5440D50034C4D0 /* ContaCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
