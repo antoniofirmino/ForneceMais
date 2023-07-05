@@ -133,10 +133,37 @@ extension ViewControllerConta: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    //pra pegar onde selecionaram
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        <#code#>
-//    }
+    //pra pegar onde o usuario clicou 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.section == 0 {
+            if indexPath.row == 0 {
+                print("0")
+                tableView.deselectRow(at: indexPath, animated: true)
+            }
+            else if indexPath.row == 1 {
+                print("1")
+                tableView.deselectRow(at: indexPath, animated: true)
+            }
+        } else if indexPath.section == 1 {
+            if indexPath.row == 0 {
+                print("2")
+                tableView.deselectRow(at: indexPath, animated: true)
+            }
+            else if indexPath.row == 1 {
+                print("3")
+                tableView.deselectRow(at: indexPath, animated: true)
+            } else if indexPath.row == 2 {
+                print("4")
+                tableView.deselectRow(at: indexPath, animated: true)
+            }
+        } else if indexPath.section == 2 {
+            if indexPath.row == 0 {
+                print("5")
+                tableView.deselectRow(at: indexPath, animated: true)
+            }
+        }
+    }
     
 }
 
