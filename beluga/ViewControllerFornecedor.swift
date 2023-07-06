@@ -13,8 +13,7 @@ class ViewControllerFornecedor: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Buscar"
-        navigationController?.navigationBar.prefersLargeTitles = true
+        
         
         // Do any additional setup after loading the view.
     }
