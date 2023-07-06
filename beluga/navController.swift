@@ -19,12 +19,12 @@ class navController: UITabBarController {
         vc1.tabBarItem.image = UIImage(systemName: "person.crop.circle")
         vc1.tabBarItem.selectedImage = UIImage(systemName: "person.crop.circle")?.withTintColor(.blue)
         
-        let vc2 = UINavigationController(rootViewController: ViewController())
+        let vc2 = UINavigationController(rootViewController: ViewControllerFornecedor())
         
-        vc2.tabBarItem.image = UIImage(systemName: "person.circle")
-        vc2.tabBarItem.selectedImage = UIImage(systemName: "person.circle")?.withTintColor(.blue)
+        vc2.tabBarItem.image = UIImage(systemName: "magnifyingglass")
+        vc2.tabBarItem.selectedImage = UIImage(systemName: "magnifyingglass")?.withTintColor(.blue)
         
-        setViewControllers([vc1], animated: true)
+        setViewControllers([vc1, vc2], animated: true)
     }
     
 
