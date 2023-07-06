@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32A9C9852A55A0B800C6181F /* ListaFornecedoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A9C9832A55A0B800C6181F /* ListaFornecedoresViewController.swift */; };
+		32A9C9862A55A0B800C6181F /* ListaFornecedoresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32A9C9842A55A0B800C6181F /* ListaFornecedoresViewController.xib */; };
+		32A9C9892A55A16500C6181F /* CelulaFornecedoresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A9C9872A55A16500C6181F /* CelulaFornecedoresTableViewCell.swift */; };
+		32A9C98A2A55A16500C6181F /* CelulaFornecedoresTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32A9C9882A55A16500C6181F /* CelulaFornecedoresTableViewCell.xib */; };
 		C5B872032A4DA62B009B5BF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B872022A4DA62B009B5BF3 /* AppDelegate.swift */; };
 		C5B872052A4DA62B009B5BF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B872042A4DA62B009B5BF3 /* SceneDelegate.swift */; };
 		C5B872072A4DA62B009B5BF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B872062A4DA62B009B5BF3 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32A9C9832A55A0B800C6181F /* ListaFornecedoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaFornecedoresViewController.swift; sourceTree = "<group>"; };
+		32A9C9842A55A0B800C6181F /* ListaFornecedoresViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaFornecedoresViewController.xib; sourceTree = "<group>"; };
+		32A9C9872A55A16500C6181F /* CelulaFornecedoresTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelulaFornecedoresTableViewCell.swift; sourceTree = "<group>"; };
+		32A9C9882A55A16500C6181F /* CelulaFornecedoresTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CelulaFornecedoresTableViewCell.xib; sourceTree = "<group>"; };
 		C5B871FF2A4DA62B009B5BF3 /* beluga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beluga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B872022A4DA62B009B5BF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5B872042A4DA62B009B5BF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +71,10 @@
 				C5B8720B2A4DA62C009B5BF3 /* Assets.xcassets */,
 				C5B8720D2A4DA62C009B5BF3 /* LaunchScreen.storyboard */,
 				C5B872102A4DA62C009B5BF3 /* Info.plist */,
+				32A9C9832A55A0B800C6181F /* ListaFornecedoresViewController.swift */,
+				32A9C9842A55A0B800C6181F /* ListaFornecedoresViewController.xib */,
+				32A9C9872A55A16500C6181F /* CelulaFornecedoresTableViewCell.swift */,
+				32A9C9882A55A16500C6181F /* CelulaFornecedoresTableViewCell.xib */,
 			);
 			path = beluga;
 			sourceTree = "<group>";
@@ -125,9 +137,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A9C98A2A55A16500C6181F /* CelulaFornecedoresTableViewCell.xib in Resources */,
 				C5B8720F2A4DA62C009B5BF3 /* LaunchScreen.storyboard in Resources */,
 				C5B8720C2A4DA62C009B5BF3 /* Assets.xcassets in Resources */,
 				C5B8720A2A4DA62B009B5BF3 /* Main.storyboard in Resources */,
+				32A9C9862A55A0B800C6181F /* ListaFornecedoresViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5B872072A4DA62B009B5BF3 /* ViewController.swift in Sources */,
+				32A9C9852A55A0B800C6181F /* ListaFornecedoresViewController.swift in Sources */,
 				C5B872032A4DA62B009B5BF3 /* AppDelegate.swift in Sources */,
+				32A9C9892A55A16500C6181F /* CelulaFornecedoresTableViewCell.swift in Sources */,
 				C5B872052A4DA62B009B5BF3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +303,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HS355ZK24R;
+				DEVELOPMENT_TEAM = WMM44HNRA4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = beluga/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -295,6 +311,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HS355ZK24R;
+				DEVELOPMENT_TEAM = WMM44HNRA4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = beluga/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -323,6 +340,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
