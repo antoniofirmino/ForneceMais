@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,33 +29,6 @@
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="bwP-9c-S2E"/>
                                 </connections>
                             </searchBar>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1wa-t7-xW2">
-                                <rect key="frame" x="8" y="207" width="374" height="512"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BBA-d4-5Sb">
-                                    <size key="itemSize" width="158" height="96"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9JR-qS-zGW">
-                                        <rect key="frame" x="0.0" y="0.0" width="158" height="96"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="thc-mo-ONl">
-                                            <rect key="frame" x="0.0" y="0.0" width="158" height="96"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IYD-gW-q45">
-                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="96"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="158" height="96"/>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qm-WY-2Jw">
                                 <rect key="frame" x="0.0" y="761" width="390" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -72,11 +44,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="5L3-Rk-Xfs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="8le-bG-E5P"/>
-                            <constraint firstItem="1wa-t7-xW2" firstAttribute="top" secondItem="5L3-Rk-Xfs" secondAttribute="bottom" constant="24" id="Glr-wA-mFe"/>
                             <constraint firstAttribute="trailing" secondItem="5L3-Rk-Xfs" secondAttribute="trailing" constant="8" id="K5y-Kx-cym"/>
                             <constraint firstItem="5L3-Rk-Xfs" firstAttribute="top" secondItem="waT-xj-9io" secondAttribute="bottom" constant="24" id="QIR-Yo-EgI"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1wa-t7-xW2" secondAttribute="trailing" constant="8" id="R8o-Xz-Sux"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1wa-t7-xW2" secondAttribute="trailing" constant="8" id="Y4K-fr-V4P"/>
                             <constraint firstItem="waT-xj-9io" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="nfN-PT-DB5"/>
                             <constraint firstItem="waT-xj-9io" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="xUH-Aj-S8b"/>
                         </constraints>
