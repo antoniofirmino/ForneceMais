@@ -15,7 +15,8 @@ class CardViewController: UIViewController {
         super.viewDidLoad()
         setupTableView()
         
-        
+        title = "Explorar"
+        navigationController?.navigationBar.prefersLargeTitles = true
         
         
 //        let border = CALayer()

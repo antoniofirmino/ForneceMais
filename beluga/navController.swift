@@ -14,6 +14,11 @@ class navController: UITabBarController {
         
         view.backgroundColor = .systemBackground
         
+        let myViewController = CardViewController(nibName: "CardViewController", bundle: nil)
+        self.present(myViewController, animated: true, completion: nil)
+        myViewController.tabBarItem.image = UIImage(systemName: "doc.text.image")
+        myViewController.tabBarItem.selectedImage = UIImage(systemName: "doc.text.image")?.withTintColor(.blue)
+        
         let vc1 = UINavigationController(rootViewController: ViewControllerConta())
         
         vc1.tabBarItem.image = UIImage(systemName: "person.crop.circle")
@@ -24,7 +29,28 @@ class navController: UITabBarController {
         vc2.tabBarItem.image = UIImage(systemName: "magnifyingglass")
         vc2.tabBarItem.selectedImage = UIImage(systemName: "magnifyingglass")?.withTintColor(.blue)
         
-        setViewControllers([vc1, vc2], animated: true)
+        
+        
+        
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "cardFornecedor")
+        self.present(vc, animated: true)
+        
+        
+        
+        
+        
+        
+        
+        
+        setViewControllers([myViewController,vc, vc1], animated: true)
+        
+        
+        
+        
+        
+        
     }
     
 
