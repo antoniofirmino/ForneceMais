@@ -20,6 +20,10 @@
 		C0FC0E402A54894900BF7955 /* FornecedorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0FC0E3E2A54894900BF7955 /* FornecedorTableViewCell.xib */; };
 		C0FC0E472A54AC4D00BF7955 /* ItensCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC0E452A54AC4D00BF7955 /* ItensCollectionViewCell.swift */; };
 		C0FC0E482A54AC4D00BF7955 /* ItensCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0FC0E462A54AC4D00BF7955 /* ItensCollectionViewCell.xib */; };
+		32A9C9852A55A0B800C6181F /* ListaFornecedoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A9C9832A55A0B800C6181F /* ListaFornecedoresViewController.swift */; };
+		32A9C9862A55A0B800C6181F /* ListaFornecedoresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32A9C9842A55A0B800C6181F /* ListaFornecedoresViewController.xib */; };
+		32A9C9892A55A16500C6181F /* CelulaFornecedoresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A9C9872A55A16500C6181F /* CelulaFornecedoresTableViewCell.swift */; };
+		32A9C98A2A55A16500C6181F /* CelulaFornecedoresTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32A9C9882A55A16500C6181F /* CelulaFornecedoresTableViewCell.xib */; };
 		C5B872032A4DA62B009B5BF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B872022A4DA62B009B5BF3 /* AppDelegate.swift */; };
 		C5B872052A4DA62B009B5BF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B872042A4DA62B009B5BF3 /* SceneDelegate.swift */; };
 		C5B8720A2A4DA62B009B5BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B872082A4DA62B009B5BF3 /* Main.storyboard */; };
@@ -46,6 +50,10 @@
 		C0FC0E3E2A54894900BF7955 /* FornecedorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FornecedorTableViewCell.xib; sourceTree = "<group>"; };
 		C0FC0E452A54AC4D00BF7955 /* ItensCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItensCollectionViewCell.swift; sourceTree = "<group>"; };
 		C0FC0E462A54AC4D00BF7955 /* ItensCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItensCollectionViewCell.xib; sourceTree = "<group>"; };
+		32A9C9832A55A0B800C6181F /* ListaFornecedoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaFornecedoresViewController.swift; sourceTree = "<group>"; };
+		32A9C9842A55A0B800C6181F /* ListaFornecedoresViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaFornecedoresViewController.xib; sourceTree = "<group>"; };
+		32A9C9872A55A16500C6181F /* CelulaFornecedoresTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelulaFornecedoresTableViewCell.swift; sourceTree = "<group>"; };
+		32A9C9882A55A16500C6181F /* CelulaFornecedoresTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CelulaFornecedoresTableViewCell.xib; sourceTree = "<group>"; };
 		C5B871FF2A4DA62B009B5BF3 /* beluga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beluga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B872022A4DA62B009B5BF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5B872042A4DA62B009B5BF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +136,10 @@
 				C0FC0E462A54AC4D00BF7955 /* ItensCollectionViewCell.xib */,
 				C01775862A56DB2C00620F6F /* SecondTableViewCell.swift */,
 				C01775872A56DB2C00620F6F /* SecondTableViewCell.xib */,
+				32A9C9832A55A0B800C6181F /* ListaFornecedoresViewController.swift */,
+				32A9C9842A55A0B800C6181F /* ListaFornecedoresViewController.xib */,
+				32A9C9872A55A16500C6181F /* CelulaFornecedoresTableViewCell.swift */,
+				32A9C9882A55A16500C6181F /* CelulaFornecedoresTableViewCell.xib */,
 			);
 			path = beluga;
 			sourceTree = "<group>";
@@ -202,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0FC0E3C2A54854E00BF7955 /* CardViewController.xib in Resources */,
+				32A9C98A2A55A16500C6181F /* CelulaFornecedoresTableViewCell.xib in Resources */,
 				C5B8720F2A4DA62C009B5BF3 /* LaunchScreen.storyboard in Resources */,
 				1EDB483E2A559C3800E344E3 /* CommentCard.xib in Resources */,
 				C0FC0E482A54AC4D00BF7955 /* ItensCollectionViewCell.xib in Resources */,
@@ -209,6 +222,7 @@
 				C01775892A56DB2C00620F6F /* SecondTableViewCell.xib in Resources */,
 				C0FC0E402A54894900BF7955 /* FornecedorTableViewCell.xib in Resources */,
 				C5B8720A2A4DA62B009B5BF3 /* Main.storyboard in Resources */,
+				32A9C9862A55A0B800C6181F /* ListaFornecedoresViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +241,9 @@
 				C0FC0E3B2A54854E00BF7955 /* CardViewController.swift in Sources */,
 				C01775882A56DB2C00620F6F /* SecondTableViewCell.swift in Sources */,
 				C09168AF2A534290002F7794 /* Course.swift in Sources */,
+				32A9C9852A55A0B800C6181F /* ListaFornecedoresViewController.swift in Sources */,
 				C5B872032A4DA62B009B5BF3 /* AppDelegate.swift in Sources */,
+				32A9C9892A55A16500C6181F /* CelulaFornecedoresTableViewCell.swift in Sources */,
 				C5B872052A4DA62B009B5BF3 /* SceneDelegate.swift in Sources */,
 				FB99535E2A545DF80034C4D0 /* ContaCellAccount.swift in Sources */,
 				FB99535C2A545DE60034C4D0 /* ContaCellLog.swift in Sources */,
@@ -381,7 +397,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HS355ZK24R;
+				DEVELOPMENT_TEAM = WMM44HNRA4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = beluga/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -389,6 +405,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -409,7 +426,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HS355ZK24R;
+				DEVELOPMENT_TEAM = WMM44HNRA4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = beluga/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -417,6 +434,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
