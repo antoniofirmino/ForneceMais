@@ -24,7 +24,7 @@ class navController: UITabBarController {
         vc1.tabBarItem.image = UIImage(systemName: "person.crop.circle")
         vc1.tabBarItem.selectedImage = UIImage(systemName: "person.crop.circle")?.withTintColor(.blue)
         
-        let vc2 = UINavigationController(rootViewController: ViewControllerFornecedor())
+        //_ = UINavigationController(rootViewController: ViewControllerFornecedor())
         
         
         
