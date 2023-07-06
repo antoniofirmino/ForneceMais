@@ -2,7 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="28w-UW-7b6">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -133,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YbU-KQ-RsC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1101.5267175572519" y="-118.30985915492958"/>
+            <point key="canvasLocation" x="515" y="-118"/>
         </scene>
         <!--Comentarios Table View Controller-->
         <scene sceneID="84L-zE-NrE">
@@ -191,6 +192,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="r50-yf-TMT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Ah-2B-XZ7">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -202,8 +204,64 @@
             </objects>
             <point key="canvasLocation" x="1006.8702290076335" y="612.67605633802816"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="yKB-Nz-64i">
+            <objects>
+                <viewController id="Y84-w2-1fz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L8N-2r-jQd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buscar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGS-he-185">
+                                <rect key="frame" x="8" y="67" width="130" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" text="Busque por um fornecedor" translatesAutoresizingMaskIntoConstraints="NO" id="KZu-jk-qgY">
+                                <rect key="frame" x="8" y="139" width="377" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Y84-w2-1fz" id="BdE-Ph-hLv"/>
+                                </connections>
+                            </searchBar>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SlZ-ao-e9r">
+                                <rect key="frame" x="0.0" y="769" width="393" height="83"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Explorar" image="doc.text.image" catalog="system" id="gRH-p9-pZS"/>
+                                    <tabBarItem title="Buscar" image="magnifyingglass" catalog="system" id="a0h-qX-OqK"/>
+                                    <tabBarItem title="Conta" image="person.crop.circle" catalog="system" id="HMH-kp-d6M"/>
+                                </items>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tabBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6cn-yq-ZkW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SlZ-ao-e9r" firstAttribute="trailing" secondItem="6cn-yq-ZkW" secondAttribute="trailing" id="4Pa-M8-zzt"/>
+                            <constraint firstAttribute="bottom" secondItem="SlZ-ao-e9r" secondAttribute="bottom" id="6R0-p2-nVa"/>
+                            <constraint firstItem="SlZ-ao-e9r" firstAttribute="leading" secondItem="6cn-yq-ZkW" secondAttribute="leading" id="Jlk-6e-3a6"/>
+                            <constraint firstItem="SlZ-ao-e9r" firstAttribute="leading" secondItem="6cn-yq-ZkW" secondAttribute="leading" id="Kcn-sl-PQp"/>
+                            <constraint firstItem="KZu-jk-qgY" firstAttribute="leading" secondItem="6cn-yq-ZkW" secondAttribute="leading" constant="8" id="NLP-XY-9Py"/>
+                            <constraint firstItem="KZu-jk-qgY" firstAttribute="top" secondItem="ZGS-he-185" secondAttribute="bottom" constant="24" id="PBb-69-tzb"/>
+                            <constraint firstItem="6cn-yq-ZkW" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZGS-he-185" secondAttribute="trailing" symbolic="YES" id="PqA-fe-ITu"/>
+                            <constraint firstItem="ZGS-he-185" firstAttribute="top" secondItem="6cn-yq-ZkW" secondAttribute="top" constant="8" id="dOk-pt-EJI"/>
+                            <constraint firstAttribute="trailing" secondItem="KZu-jk-qgY" secondAttribute="trailing" constant="8" id="gEW-Yx-c8e"/>
+                            <constraint firstItem="ZGS-he-185" firstAttribute="leading" secondItem="6cn-yq-ZkW" secondAttribute="leading" constant="8" id="guG-zj-Khv"/>
+                            <constraint firstItem="SlZ-ao-e9r" firstAttribute="trailing" secondItem="6cn-yq-ZkW" secondAttribute="trailing" id="twI-92-wfQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ak3-UF-Tfo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3006.8702290076335" y="612.67605633802816"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="doc.text.image" catalog="system" width="115" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -212,12 +270,6 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
