@@ -69,10 +69,7 @@
 				C5B872022A4DA62B009B5BF3 /* AppDelegate.swift */,
 				C5B872042A4DA62B009B5BF3 /* SceneDelegate.swift */,
 				C5B872062A4DA62B009B5BF3 /* ViewController.swift */,
-				FB0AD7732A52F60D000B47BE /* ViewControllerConta.swift */,
-				FB99535D2A545DF80034C4D0 /* ContaCellAccount.swift */,
-				FB9953592A5440D50034C4D0 /* ContaCell.swift */,
-				FB99535B2A545DE60034C4D0 /* ContaCellLog.swift */,
+				FBF34BAC2A56DC05003898AB /* Conta */,
 				FB5E51742A55A84D004BA315 /* navController.swift */,
 				C5B872082A4DA62B009B5BF3 /* Main.storyboard */,
 				C5B8720B2A4DA62C009B5BF3 /* Assets.xcassets */,
@@ -80,6 +77,17 @@
 				C5B872102A4DA62C009B5BF3 /* Info.plist */,
 			);
 			path = beluga;
+			sourceTree = "<group>";
+		};
+		FBF34BAC2A56DC05003898AB /* Conta */ = {
+			isa = PBXGroup;
+			children = (
+				FB0AD7732A52F60D000B47BE /* ViewControllerConta.swift */,
+				FB99535D2A545DF80034C4D0 /* ContaCellAccount.swift */,
+				FB9953592A5440D50034C4D0 /* ContaCell.swift */,
+				FB99535B2A545DE60034C4D0 /* ContaCellLog.swift */,
+			);
+			path = Conta;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
