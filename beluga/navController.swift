@@ -26,17 +26,17 @@ class navController: UITabBarController {
         
         let vc2 = UINavigationController(rootViewController: ViewControllerFornecedor())
         
-        vc2.tabBarItem.image = UIImage(systemName: "magnifyingglass")
-        vc2.tabBarItem.selectedImage = UIImage(systemName: "magnifyingglass")?.withTintColor(.blue)
+        
         
         
         
         
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "cardFornecedor")
+        let vc = storyboard.instantiateViewController(withIdentifier: "buscar")
         self.present(vc, animated: true)
-        
+        vc.tabBarItem.image = UIImage(systemName: "magnifyingglass")
+        vc.tabBarItem.selectedImage = UIImage(systemName: "magnifyingglass")?.withTintColor(.blue)
         
         
         
