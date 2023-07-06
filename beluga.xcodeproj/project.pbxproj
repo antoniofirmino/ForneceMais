@@ -7,19 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C01775882A56DB2C00620F6F /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01775862A56DB2C00620F6F /* SecondTableViewCell.swift */; };
+		C01775892A56DB2C00620F6F /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C01775872A56DB2C00620F6F /* SecondTableViewCell.xib */; };
+		C09168AF2A534290002F7794 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09168AE2A534290002F7794 /* Course.swift */; };
+		C0FC0E3B2A54854E00BF7955 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC0E392A54854E00BF7955 /* CardViewController.swift */; };
+		C0FC0E3C2A54854E00BF7955 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0FC0E3A2A54854E00BF7955 /* CardViewController.xib */; };
+		C0FC0E3F2A54894900BF7955 /* FornecedorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC0E3D2A54894900BF7955 /* FornecedorTableViewCell.swift */; };
+		C0FC0E402A54894900BF7955 /* FornecedorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0FC0E3E2A54894900BF7955 /* FornecedorTableViewCell.xib */; };
+		C0FC0E472A54AC4D00BF7955 /* ItensCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC0E452A54AC4D00BF7955 /* ItensCollectionViewCell.swift */; };
+		C0FC0E482A54AC4D00BF7955 /* ItensCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0FC0E462A54AC4D00BF7955 /* ItensCollectionViewCell.xib */; };
 		C5B872032A4DA62B009B5BF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B872022A4DA62B009B5BF3 /* AppDelegate.swift */; };
 		C5B872052A4DA62B009B5BF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B872042A4DA62B009B5BF3 /* SceneDelegate.swift */; };
-		C5B872072A4DA62B009B5BF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B872062A4DA62B009B5BF3 /* ViewController.swift */; };
 		C5B8720A2A4DA62B009B5BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B872082A4DA62B009B5BF3 /* Main.storyboard */; };
 		C5B8720C2A4DA62C009B5BF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B8720B2A4DA62C009B5BF3 /* Assets.xcassets */; };
 		C5B8720F2A4DA62C009B5BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B8720D2A4DA62C009B5BF3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C01775862A56DB2C00620F6F /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		C01775872A56DB2C00620F6F /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
+		C09168AE2A534290002F7794 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		C0FC0E392A54854E00BF7955 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		C0FC0E3A2A54854E00BF7955 /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
+		C0FC0E3D2A54894900BF7955 /* FornecedorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FornecedorTableViewCell.swift; sourceTree = "<group>"; };
+		C0FC0E3E2A54894900BF7955 /* FornecedorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FornecedorTableViewCell.xib; sourceTree = "<group>"; };
+		C0FC0E452A54AC4D00BF7955 /* ItensCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItensCollectionViewCell.swift; sourceTree = "<group>"; };
+		C0FC0E462A54AC4D00BF7955 /* ItensCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItensCollectionViewCell.xib; sourceTree = "<group>"; };
 		C5B871FF2A4DA62B009B5BF3 /* beluga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beluga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B872022A4DA62B009B5BF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5B872042A4DA62B009B5BF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C5B872062A4DA62B009B5BF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C5B872092A4DA62B009B5BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5B8720B2A4DA62C009B5BF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5B8720E2A4DA62C009B5BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,11 +74,19 @@
 			children = (
 				C5B872022A4DA62B009B5BF3 /* AppDelegate.swift */,
 				C5B872042A4DA62B009B5BF3 /* SceneDelegate.swift */,
-				C5B872062A4DA62B009B5BF3 /* ViewController.swift */,
+				C09168AE2A534290002F7794 /* Course.swift */,
 				C5B872082A4DA62B009B5BF3 /* Main.storyboard */,
 				C5B8720B2A4DA62C009B5BF3 /* Assets.xcassets */,
 				C5B8720D2A4DA62C009B5BF3 /* LaunchScreen.storyboard */,
 				C5B872102A4DA62C009B5BF3 /* Info.plist */,
+				C0FC0E392A54854E00BF7955 /* CardViewController.swift */,
+				C0FC0E3A2A54854E00BF7955 /* CardViewController.xib */,
+				C0FC0E3D2A54894900BF7955 /* FornecedorTableViewCell.swift */,
+				C0FC0E3E2A54894900BF7955 /* FornecedorTableViewCell.xib */,
+				C0FC0E452A54AC4D00BF7955 /* ItensCollectionViewCell.swift */,
+				C0FC0E462A54AC4D00BF7955 /* ItensCollectionViewCell.xib */,
+				C01775862A56DB2C00620F6F /* SecondTableViewCell.swift */,
+				C01775872A56DB2C00620F6F /* SecondTableViewCell.xib */,
 			);
 			path = beluga;
 			sourceTree = "<group>";
@@ -125,8 +149,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0FC0E3C2A54854E00BF7955 /* CardViewController.xib in Resources */,
 				C5B8720F2A4DA62C009B5BF3 /* LaunchScreen.storyboard in Resources */,
+				C0FC0E482A54AC4D00BF7955 /* ItensCollectionViewCell.xib in Resources */,
 				C5B8720C2A4DA62C009B5BF3 /* Assets.xcassets in Resources */,
+				C01775892A56DB2C00620F6F /* SecondTableViewCell.xib in Resources */,
+				C0FC0E402A54894900BF7955 /* FornecedorTableViewCell.xib in Resources */,
 				C5B8720A2A4DA62B009B5BF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5B872072A4DA62B009B5BF3 /* ViewController.swift in Sources */,
+				C0FC0E3F2A54894900BF7955 /* FornecedorTableViewCell.swift in Sources */,
+				C0FC0E472A54AC4D00BF7955 /* ItensCollectionViewCell.swift in Sources */,
+				C0FC0E3B2A54854E00BF7955 /* CardViewController.swift in Sources */,
+				C01775882A56DB2C00620F6F /* SecondTableViewCell.swift in Sources */,
+				C09168AF2A534290002F7794 /* Course.swift in Sources */,
 				C5B872032A4DA62B009B5BF3 /* AppDelegate.swift in Sources */,
 				C5B872052A4DA62B009B5BF3 /* SceneDelegate.swift in Sources */,
 			);
