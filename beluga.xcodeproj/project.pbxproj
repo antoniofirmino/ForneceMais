@@ -13,6 +13,8 @@
 		C5B8720A2A4DA62B009B5BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B872082A4DA62B009B5BF3 /* Main.storyboard */; };
 		C5B8720C2A4DA62C009B5BF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B8720B2A4DA62C009B5BF3 /* Assets.xcassets */; };
 		C5B8720F2A4DA62C009B5BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B8720D2A4DA62C009B5BF3 /* LaunchScreen.storyboard */; };
+		C5B872172A5434EB009B5BF3 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B872162A5434EB009B5BF3 /* Search.storyboard */; };
+		C5B8721B2A559261009B5BF3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B8721A2A559261009B5BF3 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C5B8720B2A4DA62C009B5BF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5B8720E2A4DA62C009B5BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5B872102A4DA62C009B5BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5B872162A5434EB009B5BF3 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		C5B8721A2A559261009B5BF3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = ../SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +64,10 @@
 				C5B872042A4DA62B009B5BF3 /* SceneDelegate.swift */,
 				C5B872062A4DA62B009B5BF3 /* ViewController.swift */,
 				C5B872082A4DA62B009B5BF3 /* Main.storyboard */,
+				C5B8721A2A559261009B5BF3 /* SearchViewController.swift */,
 				C5B8720B2A4DA62C009B5BF3 /* Assets.xcassets */,
 				C5B8720D2A4DA62C009B5BF3 /* LaunchScreen.storyboard */,
+				C5B872162A5434EB009B5BF3 /* Search.storyboard */,
 				C5B872102A4DA62C009B5BF3 /* Info.plist */,
 			);
 			path = beluga;
@@ -127,6 +133,7 @@
 			files = (
 				C5B8720F2A4DA62C009B5BF3 /* LaunchScreen.storyboard in Resources */,
 				C5B8720C2A4DA62C009B5BF3 /* Assets.xcassets in Resources */,
+				C5B872172A5434EB009B5BF3 /* Search.storyboard in Resources */,
 				C5B8720A2A4DA62B009B5BF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +147,7 @@
 			files = (
 				C5B872072A4DA62B009B5BF3 /* ViewController.swift in Sources */,
 				C5B872032A4DA62B009B5BF3 /* AppDelegate.swift in Sources */,
+				C5B8721B2A559261009B5BF3 /* SearchViewController.swift in Sources */,
 				C5B872052A4DA62B009B5BF3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
