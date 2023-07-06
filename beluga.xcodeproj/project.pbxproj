@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C54479E42A56F0DB00AB5201 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54479E22A56F0DB00AB5201 /* SearchCollectionViewCell.swift */; };
+		C54479E52A56F0DB00AB5201 /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C54479E32A56F0DB00AB5201 /* SearchCollectionViewCell.xib */; };
 		C5B872032A4DA62B009B5BF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B872022A4DA62B009B5BF3 /* AppDelegate.swift */; };
 		C5B872052A4DA62B009B5BF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B872042A4DA62B009B5BF3 /* SceneDelegate.swift */; };
 		C5B872072A4DA62B009B5BF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B872062A4DA62B009B5BF3 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C54479E22A56F0DB00AB5201 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		C54479E32A56F0DB00AB5201 /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
 		C5B871FF2A4DA62B009B5BF3 /* beluga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beluga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B872022A4DA62B009B5BF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5B872042A4DA62B009B5BF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,11 +68,13 @@
 				C5B872042A4DA62B009B5BF3 /* SceneDelegate.swift */,
 				C5B872062A4DA62B009B5BF3 /* ViewController.swift */,
 				C5B872082A4DA62B009B5BF3 /* Main.storyboard */,
-				C5B8721A2A559261009B5BF3 /* SearchViewController.swift */,
 				C5B8720B2A4DA62C009B5BF3 /* Assets.xcassets */,
 				C5B8720D2A4DA62C009B5BF3 /* LaunchScreen.storyboard */,
 				C5B872162A5434EB009B5BF3 /* Search.storyboard */,
+				C5B8721A2A559261009B5BF3 /* SearchViewController.swift */,
 				C5B872102A4DA62C009B5BF3 /* Info.plist */,
+				C54479E22A56F0DB00AB5201 /* SearchCollectionViewCell.swift */,
+				C54479E32A56F0DB00AB5201 /* SearchCollectionViewCell.xib */,
 			);
 			path = beluga;
 			sourceTree = "<group>";
@@ -133,6 +139,7 @@
 			files = (
 				C5B8720F2A4DA62C009B5BF3 /* LaunchScreen.storyboard in Resources */,
 				C5B8720C2A4DA62C009B5BF3 /* Assets.xcassets in Resources */,
+				C54479E52A56F0DB00AB5201 /* SearchCollectionViewCell.xib in Resources */,
 				C5B872172A5434EB009B5BF3 /* Search.storyboard in Resources */,
 				C5B8720A2A4DA62B009B5BF3 /* Main.storyboard in Resources */,
 			);
@@ -149,6 +156,7 @@
 				C5B872032A4DA62B009B5BF3 /* AppDelegate.swift in Sources */,
 				C5B8721B2A559261009B5BF3 /* SearchViewController.swift in Sources */,
 				C5B872052A4DA62B009B5BF3 /* SceneDelegate.swift in Sources */,
+				C54479E42A56F0DB00AB5201 /* SearchCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

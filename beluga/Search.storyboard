@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,9 +30,8 @@
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="bwP-9c-S2E"/>
                                 </connections>
                             </searchBar>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qm-WY-2Jw">
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4qm-WY-2Jw">
                                 <rect key="frame" x="0.0" y="761" width="390" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem title="Explorar" image="doc.text.image" catalog="system" id="XFD-5T-Q3o"/>
@@ -39,21 +39,49 @@
                                     <tabBarItem title="Conta" image="person.crop.circle" catalog="system" id="VzW-Vj-fbd"/>
                                 </items>
                             </tabBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Sg8-XG-Z8F">
+                                <rect key="frame" x="8" y="207" width="374" height="135"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BPg-l5-Dyb">
+                                    <size key="itemSize" width="128" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0Dl-oi-aMu">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ybu-JF-Exc">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="128" height="100"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="4qm-WY-2Jw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="4gW-F3-34t"/>
+                            <constraint firstItem="Sg8-XG-Z8F" firstAttribute="top" secondItem="5L3-Rk-Xfs" secondAttribute="bottom" constant="24" id="4jx-0q-Mr9"/>
                             <constraint firstItem="5L3-Rk-Xfs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="8le-bG-E5P"/>
                             <constraint firstAttribute="trailing" secondItem="5L3-Rk-Xfs" secondAttribute="trailing" constant="8" id="K5y-Kx-cym"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Sg8-XG-Z8F" secondAttribute="trailing" constant="8" id="KC1-Yi-EPZ"/>
                             <constraint firstItem="5L3-Rk-Xfs" firstAttribute="top" secondItem="waT-xj-9io" secondAttribute="bottom" constant="24" id="QIR-Yo-EgI"/>
+                            <constraint firstItem="4qm-WY-2Jw" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="SzG-hh-cCb"/>
+                            <constraint firstItem="4qm-WY-2Jw" firstAttribute="top" secondItem="Sg8-XG-Z8F" secondAttribute="bottom" constant="419" id="Thb-9g-rnP"/>
+                            <constraint firstItem="Sg8-XG-Z8F" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="ZQi-zW-CA8"/>
                             <constraint firstItem="waT-xj-9io" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="nfN-PT-DB5"/>
+                            <constraint firstItem="4qm-WY-2Jw" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="qq6-XH-H54"/>
                             <constraint firstItem="waT-xj-9io" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="xUH-Aj-S8b"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-46" y="-4"/>
+            <point key="canvasLocation" x="-46.153846153846153" y="-4.2654028436018958"/>
         </scene>
     </scenes>
     <resources>
