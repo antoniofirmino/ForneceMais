@@ -95,5 +95,12 @@ extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
            cell.contentView.backgroundColor = .clear
            cell.backgroundColor = .clear
        }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 1 {
+            if indexPath.row < 10 && indexPath.row > -1 {
+                let next = ListaFornecedoresViewController(nibName: "ListaFornecedoresViewController", bundle: nil)
+                self.navigationController?.pushViewController(next, animated: true)
+            }
+        }
+    }
 }

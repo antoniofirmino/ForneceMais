@@ -13,7 +13,7 @@ class ListaFornecedoresViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-
+        
     }
     private func setupTableView() {
         TableViewFornecedores.dataSource = self
@@ -36,6 +36,15 @@ extension ListaFornecedoresViewController: UITableViewDataSource, UITableViewDel
         }
 //        cell.ligacao1.text = "Fornecedor"
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0 {
+            if indexPath.row > -1 && indexPath.row < 10{
+                let next = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "cardFornecedor")
+                self.navigationController?.present(next, animated: true)
+            }
+        }
     }
 
 }
