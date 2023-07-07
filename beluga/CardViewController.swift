@@ -16,19 +16,7 @@ class CardViewController: UIViewController {
         title = "Explorar"
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        //title = "Explorar"
-        //navigationController?.navigationBar.prefersLargeTitles = true
-        
-        
-//        let border = CALayer()
-//        border.backgroundColor = UIColor.lightGray.cgColor
-//        border.frame = CGRect(x: 0, y: viewHeader.frame.size.height, width: viewHeader.frame.size.width, height: 1)
-//        viewHeader.layer.addSublayer(border)
-//        
-//        view.addSubview(viewHeader)
     }
-    //ola luisito
-    //de nvo
     
     private func setupTableView(){
         listCardTableView.dataSource = self
@@ -95,6 +83,7 @@ extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
            cell.contentView.backgroundColor = .clear
            cell.backgroundColor = .clear
        }
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 1 {
             if indexPath.row < 10 && indexPath.row > -1 {
@@ -103,4 +92,5 @@ extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
             }
         }
     }
+    
 }
