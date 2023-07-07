@@ -87,8 +87,9 @@ extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 1 {
             if indexPath.row < 10 && indexPath.row > -1 {
-                let next = ListaFornecedoresViewController(nibName: "ListaFornecedoresViewController", bundle: nil)
-                self.navigationController?.pushViewController(next, animated: true)
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "cardFornecedor")
+                self.present(vc, animated: true)
             }
         }
     }
