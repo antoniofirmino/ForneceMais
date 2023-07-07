@@ -19,7 +19,6 @@
 		C01775892A56DB2C00620F6F /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C01775872A56DB2C00620F6F /* SecondTableViewCell.xib */; };
 		C09168AF2A534290002F7794 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09168AE2A534290002F7794 /* Course.swift */; };
 		C0FC0E3B2A54854E00BF7955 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC0E392A54854E00BF7955 /* CardViewController.swift */; };
-		C0FC0E3C2A54854E00BF7955 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0FC0E3A2A54854E00BF7955 /* CardViewController.xib */; };
 		C0FC0E3F2A54894900BF7955 /* FornecedorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC0E3D2A54894900BF7955 /* FornecedorTableViewCell.swift */; };
 		C0FC0E402A54894900BF7955 /* FornecedorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0FC0E3E2A54894900BF7955 /* FornecedorTableViewCell.xib */; };
 		C0FC0E472A54AC4D00BF7955 /* ItensCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC0E452A54AC4D00BF7955 /* ItensCollectionViewCell.swift */; };
@@ -32,6 +31,7 @@
 		FB0AD7742A52F60D000B47BE /* ViewControllerConta.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AD7732A52F60D000B47BE /* ViewControllerConta.swift */; };
 		FB470D0E2A57103D00AF3ACA /* ViewControllerBusca.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB470D0D2A57103D00AF3ACA /* ViewControllerBusca.swift */; };
 		FB5E51752A55A84D004BA315 /* navController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5E51742A55A84D004BA315 /* navController.swift */; };
+		FB8C22B52A58429000BCFB30 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB8C22B42A58429000BCFB30 /* CardViewController.xib */; };
 		FB99535A2A5440D50034C4D0 /* ContaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9953592A5440D50034C4D0 /* ContaCell.swift */; };
 		FB99535C2A545DE60034C4D0 /* ContaCellLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99535B2A545DE60034C4D0 /* ContaCellLog.swift */; };
 		FB99535E2A545DF80034C4D0 /* ContaCellAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99535D2A545DF80034C4D0 /* ContaCellAccount.swift */; };
@@ -50,7 +50,6 @@
 		C01775872A56DB2C00620F6F /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
 		C09168AE2A534290002F7794 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		C0FC0E392A54854E00BF7955 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
-		C0FC0E3A2A54854E00BF7955 /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
 		C0FC0E3D2A54894900BF7955 /* FornecedorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FornecedorTableViewCell.swift; sourceTree = "<group>"; };
 		C0FC0E3E2A54894900BF7955 /* FornecedorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FornecedorTableViewCell.xib; sourceTree = "<group>"; };
 		C0FC0E452A54AC4D00BF7955 /* ItensCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItensCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		FB0AD7732A52F60D000B47BE /* ViewControllerConta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerConta.swift; sourceTree = "<group>"; };
 		FB470D0D2A57103D00AF3ACA /* ViewControllerBusca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBusca.swift; sourceTree = "<group>"; };
 		FB5E51742A55A84D004BA315 /* navController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navController.swift; sourceTree = "<group>"; };
+		FB8C22B42A58429000BCFB30 /* CardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
 		FB9953592A5440D50034C4D0 /* ContaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaCell.swift; sourceTree = "<group>"; };
 		FB99535B2A545DE60034C4D0 /* ContaCellLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaCellLog.swift; sourceTree = "<group>"; };
 		FB99535D2A545DF80034C4D0 /* ContaCellAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaCellAccount.swift; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 				C5B8720D2A4DA62C009B5BF3 /* LaunchScreen.storyboard */,
 				C5B872102A4DA62C009B5BF3 /* Info.plist */,
 				C0FC0E392A54854E00BF7955 /* CardViewController.swift */,
-				C0FC0E3A2A54854E00BF7955 /* CardViewController.xib */,
+				FB8C22B42A58429000BCFB30 /* CardViewController.xib */,
 				C0FC0E3D2A54894900BF7955 /* FornecedorTableViewCell.swift */,
 				C0FC0E3E2A54894900BF7955 /* FornecedorTableViewCell.xib */,
 				C0FC0E452A54AC4D00BF7955 /* ItensCollectionViewCell.swift */,
@@ -215,7 +215,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0FC0E3C2A54854E00BF7955 /* CardViewController.xib in Resources */,
 				32A9C98A2A55A16500C6181F /* CelulaFornecedoresTableViewCell.xib in Resources */,
 				C5B8720F2A4DA62C009B5BF3 /* LaunchScreen.storyboard in Resources */,
 				1EDB483E2A559C3800E344E3 /* CommentCard.xib in Resources */,
@@ -224,6 +223,7 @@
 				C01775892A56DB2C00620F6F /* SecondTableViewCell.xib in Resources */,
 				C0FC0E402A54894900BF7955 /* FornecedorTableViewCell.xib in Resources */,
 				C5B8720A2A4DA62B009B5BF3 /* Main.storyboard in Resources */,
+				FB8C22B52A58429000BCFB30 /* CardViewController.xib in Resources */,
 				32A9C9862A55A0B800C6181F /* ListaFornecedoresViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -50,7 +50,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="A5W-Uf-AzU" firstAttribute="top" secondItem="dUa-X8-87m" secondAttribute="bottom" constant="8" id="GnT-u9-J8b"/>
                                     <constraint firstAttribute="trailing" secondItem="k9H-Jp-C96" secondAttribute="trailing" constant="16" id="Kpc-kR-faw"/>
@@ -87,6 +87,7 @@
             </constraints>
             <size key="customSize" width="301" height="344"/>
             <connections>
+                <outlet property="cardView" destination="nZ3-kX-X9A" id="1Qg-yt-guk"/>
                 <outlet property="forncedorNameCollectionCell" destination="A5W-Uf-AzU" id="iAr-JU-gBL"/>
                 <outlet property="nichoCollectionCell" destination="Cph-dI-Nmo" id="c7j-ih-3HZ"/>
                 <outlet property="starsCollectionCell" destination="dUa-X8-87m" id="aev-ca-NlH"/>
@@ -96,8 +97,8 @@
     </objects>
     <resources>
         <image name="bookmark" catalog="system" width="110" height="128"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
