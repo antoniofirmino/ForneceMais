@@ -15,9 +15,10 @@ class navController: UITabBarController {
         view.backgroundColor = .systemBackground
         
         let myViewController = CardViewController(nibName: "CardViewController", bundle: nil)
-        self.present(myViewController, animated: true, completion: nil)
         myViewController.tabBarItem.image = UIImage(systemName: "doc.text.image")
         myViewController.tabBarItem.selectedImage = UIImage(systemName: "doc.text.image")?.withTintColor(.blue)
+        let navigationController = UINavigationController(rootViewController: myViewController)
+        self.present(navigationController, animated: true, completion: nil)
         
         let vc1 = UINavigationController(rootViewController: ViewControllerConta())
         
@@ -44,7 +45,7 @@ class navController: UITabBarController {
         
         
         
-        setViewControllers([myViewController,vc, vc1], animated: true)
+        setViewControllers([navigationController,vc, vc1], animated: true)
         
         
         
