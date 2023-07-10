@@ -205,10 +205,10 @@
             </objects>
             <point key="canvasLocation" x="1006.8702290076335" y="612.67605633802816"/>
         </scene>
-        <!--View Controller-->
+        <!--Search View Controller-->
         <scene sceneID="yKB-Nz-64i">
             <objects>
-                <viewController storyboardIdentifier="buscar" id="Y84-w2-1fz" customClass="ViewController" customModule="ForneceMais" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="buscar" id="Y84-w2-1fz" customClass="SearchViewController" customModule="ForneceMais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L8N-2r-jQd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//   SearchViewController.swift
 //  beluga
 //
 //  Created by Luis Silva on 03/07/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class  SearchViewController: UIViewController {
 
     @IBOutlet weak var buscaCollectionView: UICollectionView!
     override func viewDidLoad() {
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: UICollectionViewDataSource {
+extension  SearchViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return categorias.count
     }
@@ -31,7 +31,7 @@ extension ViewController: UICollectionViewDataSource {
     }
 }
 
-extension ViewController: UICollectionViewDelegateFlowLayout {
+extension  SearchViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 172, height: 106)
     }

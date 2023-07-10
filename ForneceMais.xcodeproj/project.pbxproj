@@ -26,8 +26,8 @@
 		C0FC0E482A54AC4D00BF7955 /* ItensCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0FC0E462A54AC4D00BF7955 /* ItensCollectionViewCell.xib */; };
 		C536C00F2A5C2ED5009A8093 /* BuscarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536C00E2A5C2ED5009A8093 /* BuscarCollectionViewCell.swift */; };
 		C536C0112A5C317A009A8093 /* BuscarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536C0102A5C317A009A8093 /* BuscarViewController.swift */; };
-		C536C0132A5C377A009A8093 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536C0122A5C377A009A8093 /* ViewController.swift */; };
 		C536C0152A5C433D009A8093 /* Categorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536C0142A5C433D009A8093 /* Categorias.swift */; };
+		C536C0172A5C53E4009A8093 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536C0162A5C53E4009A8093 /* SearchViewController.swift */; };
 		C5B872032A4DA62B009B5BF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B872022A4DA62B009B5BF3 /* AppDelegate.swift */; };
 		C5B872052A4DA62B009B5BF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B872042A4DA62B009B5BF3 /* SceneDelegate.swift */; };
 		C5B8720A2A4DA62B009B5BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B872082A4DA62B009B5BF3 /* Main.storyboard */; };
@@ -60,8 +60,8 @@
 		C0FC0E462A54AC4D00BF7955 /* ItensCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItensCollectionViewCell.xib; sourceTree = "<group>"; };
 		C536C00E2A5C2ED5009A8093 /* BuscarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscarCollectionViewCell.swift; sourceTree = "<group>"; };
 		C536C0102A5C317A009A8093 /* BuscarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscarViewController.swift; sourceTree = "<group>"; };
-		C536C0122A5C377A009A8093 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = SOURCE_ROOT; };
 		C536C0142A5C433D009A8093 /* Categorias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorias.swift; sourceTree = "<group>"; };
+		C536C0162A5C53E4009A8093 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C5B871FF2A4DA62B009B5BF3 /* ForneceMais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForneceMais.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B872022A4DA62B009B5BF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5B872042A4DA62B009B5BF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 				C09168AE2A534290002F7794 /* Course.swift */,
 				C5B872082A4DA62B009B5BF3 /* Main.storyboard */,
 				C536C0142A5C433D009A8093 /* Categorias.swift */,
-				C536C0122A5C377A009A8093 /* ViewController.swift */,
+				C536C0162A5C53E4009A8093 /* SearchViewController.swift */,
 				C536C0102A5C317A009A8093 /* BuscarViewController.swift */,
 				C536C00E2A5C2ED5009A8093 /* BuscarCollectionViewCell.swift */,
 				C5B8720B2A4DA62C009B5BF3 /* Assets.xcassets */,
@@ -254,8 +254,8 @@
 				C09168AF2A534290002F7794 /* Course.swift in Sources */,
 				C536C0112A5C317A009A8093 /* BuscarViewController.swift in Sources */,
 				32A9C9852A55A0B800C6181F /* ListaFornecedoresViewController.swift in Sources */,
-				C536C0132A5C377A009A8093 /* ViewController.swift in Sources */,
 				C5B872032A4DA62B009B5BF3 /* AppDelegate.swift in Sources */,
+				C536C0172A5C53E4009A8093 /* SearchViewController.swift in Sources */,
 				32A9C9892A55A16500C6181F /* CelulaFornecedoresTableViewCell.swift in Sources */,
 				C536C0152A5C433D009A8093 /* Categorias.swift in Sources */,
 				C5B872052A4DA62B009B5BF3 /* SceneDelegate.swift in Sources */,
