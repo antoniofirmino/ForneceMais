@@ -1,20 +1,17 @@
 //
-//  ViewControllerBusca.swift
+//  ViewController.swift
 //  beluga
 //
-//  Created by Luis Silva on 06/07/23.
+//  Created by Luis Silva on 03/07/23.
 //
 
 import UIKit
 
-class ViewControllerBusca: UIViewController {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Buscar"
-        navigationController?.navigationBar.prefersLargeTitles = true
-        
         // Do any additional setup after loading the view.
     }
     
