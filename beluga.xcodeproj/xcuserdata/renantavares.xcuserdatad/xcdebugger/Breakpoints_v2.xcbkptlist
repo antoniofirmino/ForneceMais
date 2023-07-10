@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "215A35CB-DF5B-4180-A078-142B4F8B8B06"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38D02287-E328-41FA-84B2-909982E85090"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beluga/FornecedorTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "awakeFromNib()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "38D02287-E328-41FA-84B2-909982E85090 - e3bc1a8f9403b173"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "beluga.FornecedorTableViewCell.awakeFromNib() -&gt; ()"
+                  moduleName = "beluga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renantavares/Documents/beluga/beluga/FornecedorTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "38D02287-E328-41FA-84B2-909982E85090 - e3bc1a8f9403b173"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "beluga.FornecedorTableViewCell.awakeFromNib() -&gt; ()"
+                  moduleName = "beluga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renantavares/Documents/beluga/beluga/FornecedorTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D7C93522-717A-412B-A1AB-0DF809923BEC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beluga/SecondTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "SecondTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "D7C93522-717A-412B-A1AB-0DF809923BEC - e910f828de2dbeaf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "beluga.SecondTableViewCell.nichoCardTableCell.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "beluga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renantavares/Documents/beluga/beluga/SecondTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "D7C93522-717A-412B-A1AB-0DF809923BEC - 489d0f12563012b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "beluga.SecondTableViewCell.nichoCardTableCell.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "beluga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renantavares/Documents/beluga/beluga/SecondTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "D7C93522-717A-412B-A1AB-0DF809923BEC - e2700b69eed017ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "beluga.SecondTableViewCell.nichoCardTableCell.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "beluga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renantavares/Documents/beluga/beluga/SecondTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "D7C93522-717A-412B-A1AB-0DF809923BEC - be0375ce27713bbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "beluga.SecondTableViewCell.nichoCardTableCell.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "beluga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renantavares/Documents/beluga/beluga/SecondTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "D7C93522-717A-412B-A1AB-0DF809923BEC - 1d7815de16bd0d7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "beluga.SecondTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; beluga.SecondTableViewCell"
+                  moduleName = "beluga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renantavares/Documents/beluga/beluga/SecondTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "D7C93522-717A-412B-A1AB-0DF809923BEC - dc6e6f31cda61e29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "beluga.SecondTableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;beluga.SecondTableViewCell&gt;"
+                  moduleName = "beluga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renantavares/Documents/beluga/beluga/SecondTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9056477-1A50-4DF0-A96A-F90553493090"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beluga/SecondTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "SecondTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "A9056477-1A50-4DF0-A96A-F90553493090 - 275a774564adc4cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "beluga.SecondTableViewCell.fornecedorNameTableCell.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "beluga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renantavares/Documents/beluga/beluga/SecondTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "A9056477-1A50-4DF0-A96A-F90553493090 - cb7f614a7283b8db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "beluga.SecondTableViewCell.fornecedorNameTableCell.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "beluga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renantavares/Documents/beluga/beluga/SecondTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "A9056477-1A50-4DF0-A96A-F90553493090 - 9af8dc6497efbdc8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "beluga.SecondTableViewCell.fornecedorNameTableCell.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "beluga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renantavares/Documents/beluga/beluga/SecondTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "A9056477-1A50-4DF0-A96A-F90553493090 - c5050b54cc008013"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "beluga.SecondTableViewCell.fornecedorNameTableCell.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "beluga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renantavares/Documents/beluga/beluga/SecondTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "A9056477-1A50-4DF0-A96A-F90553493090 - 1d7815de16bd0d38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "beluga.SecondTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; beluga.SecondTableViewCell"
+                  moduleName = "beluga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renantavares/Documents/beluga/beluga/SecondTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "A9056477-1A50-4DF0-A96A-F90553493090 - dc6e6f31cda61e6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "beluga.SecondTableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;beluga.SecondTableViewCell&gt;"
+                  moduleName = "beluga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renantavares/Documents/beluga/beluga/SecondTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
