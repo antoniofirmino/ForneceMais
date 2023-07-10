@@ -30,6 +30,7 @@
 		C5B8720F2A4DA62C009B5BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B8720D2A4DA62C009B5BF3 /* LaunchScreen.storyboard */; };
 		FB0AD7742A52F60D000B47BE /* ViewControllerConta.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AD7732A52F60D000B47BE /* ViewControllerConta.swift */; };
 		FB470D0E2A57103D00AF3ACA /* ViewControllerBusca.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB470D0D2A57103D00AF3ACA /* ViewControllerBusca.swift */; };
+		FB540A362A5C403C00A04568 /* BelugaData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB540A342A5C403C00A04568 /* BelugaData.xcdatamodeld */; };
 		FB5E51752A55A84D004BA315 /* navController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5E51742A55A84D004BA315 /* navController.swift */; };
 		FB8C22B52A58429000BCFB30 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB8C22B42A58429000BCFB30 /* CardViewController.xib */; };
 		FB99535A2A5440D50034C4D0 /* ContaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9953592A5440D50034C4D0 /* ContaCell.swift */; };
@@ -63,6 +64,7 @@
 		C5B872102A4DA62C009B5BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB0AD7732A52F60D000B47BE /* ViewControllerConta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerConta.swift; sourceTree = "<group>"; };
 		FB470D0D2A57103D00AF3ACA /* ViewControllerBusca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBusca.swift; sourceTree = "<group>"; };
+		FB540A352A5C403C00A04568 /* BelugaData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BelugaData.xcdatamodel; sourceTree = "<group>"; };
 		FB5E51742A55A84D004BA315 /* navController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navController.swift; sourceTree = "<group>"; };
 		FB8C22B42A58429000BCFB30 /* CardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
 		FB9953592A5440D50034C4D0 /* ContaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaCell.swift; sourceTree = "<group>"; };
@@ -117,19 +119,29 @@
 		C5B872012A4DA62B009B5BF3 /* beluga */ = {
 			isa = PBXGroup;
 			children = (
-				1E1E5DD32A543D89006014DD /* Components */,
+				FB5E51742A55A84D004BA315 /* navController.swift */,
 				C5B872022A4DA62B009B5BF3 /* AppDelegate.swift */,
 				C5B872042A4DA62B009B5BF3 /* SceneDelegate.swift */,
+				1E1E5DD32A543D89006014DD /* Components */,
 				FBF34BAC2A56DC05003898AB /* Conta */,
-				FB5E51742A55A84D004BA315 /* navController.swift */,
+				FB540A372A5C408700A04568 /* Explorar */,
+				FB540A382A5C40B800A04568 /* Lista de fornecedores */,
 				FB470D0D2A57103D00AF3ACA /* ViewControllerBusca.swift */,
 				1E1E5DD92A5459DC006014DD /* ViewControllerFornecedor.swift */,
 				1E5BF8C72A55B67E004FA3B8 /* ComentariosTableViewController.swift */,
 				C09168AE2A534290002F7794 /* Course.swift */,
 				C5B872082A4DA62B009B5BF3 /* Main.storyboard */,
-				C5B8720B2A4DA62C009B5BF3 /* Assets.xcassets */,
 				C5B8720D2A4DA62C009B5BF3 /* LaunchScreen.storyboard */,
+				C5B8720B2A4DA62C009B5BF3 /* Assets.xcassets */,
 				C5B872102A4DA62C009B5BF3 /* Info.plist */,
+				FB540A342A5C403C00A04568 /* BelugaData.xcdatamodeld */,
+			);
+			path = beluga;
+			sourceTree = "<group>";
+		};
+		FB540A372A5C408700A04568 /* Explorar */ = {
+			isa = PBXGroup;
+			children = (
 				C0FC0E392A54854E00BF7955 /* CardViewController.swift */,
 				FB8C22B42A58429000BCFB30 /* CardViewController.xib */,
 				C0FC0E3D2A54894900BF7955 /* FornecedorTableViewCell.swift */,
@@ -138,12 +150,19 @@
 				C0FC0E462A54AC4D00BF7955 /* ItensCollectionViewCell.xib */,
 				C01775862A56DB2C00620F6F /* SecondTableViewCell.swift */,
 				C01775872A56DB2C00620F6F /* SecondTableViewCell.xib */,
+			);
+			path = Explorar;
+			sourceTree = "<group>";
+		};
+		FB540A382A5C40B800A04568 /* Lista de fornecedores */ = {
+			isa = PBXGroup;
+			children = (
 				32A9C9832A55A0B800C6181F /* ListaFornecedoresViewController.swift */,
 				32A9C9842A55A0B800C6181F /* ListaFornecedoresViewController.xib */,
-				32A9C9872A55A16500C6181F /* CelulaFornecedoresTableViewCell.swift */,
 				32A9C9882A55A16500C6181F /* CelulaFornecedoresTableViewCell.xib */,
+				32A9C9872A55A16500C6181F /* CelulaFornecedoresTableViewCell.swift */,
 			);
-			path = beluga;
+			path = "Lista de fornecedores";
 			sourceTree = "<group>";
 		};
 		FBF34BAC2A56DC05003898AB /* Conta */ = {
@@ -237,6 +256,7 @@
 			files = (
 				FB0AD7742A52F60D000B47BE /* ViewControllerConta.swift in Sources */,
 				1E1E5DD62A543F33006014DD /* CommentCard.swift in Sources */,
+				FB540A362A5C403C00A04568 /* BelugaData.xcdatamodeld in Sources */,
 				C0FC0E3F2A54894900BF7955 /* FornecedorTableViewCell.swift in Sources */,
 				C0FC0E472A54AC4D00BF7955 /* ItensCollectionViewCell.swift in Sources */,
 				C0FC0E3B2A54854E00BF7955 /* CardViewController.swift in Sources */,
@@ -476,6 +496,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FB540A342A5C403C00A04568 /* BelugaData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FB540A352A5C403C00A04568 /* BelugaData.xcdatamodel */,
+			);
+			currentVersion = FB540A352A5C403C00A04568 /* BelugaData.xcdatamodel */;
+			path = BelugaData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C5B871F72A4DA62B009B5BF3 /* Project object */;
 }
