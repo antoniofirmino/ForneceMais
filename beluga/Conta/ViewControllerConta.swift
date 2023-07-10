@@ -10,7 +10,6 @@ import UIKit
 struct cells{
     var image: UIImage
     var title: String
-    var label: UIImage
 }
 struct cellsLog{
     var label2: String
@@ -31,6 +30,7 @@ class ViewControllerConta: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Conta"
+        
         navigationController?.navigationBar.prefersLargeTitles = true
         
         
@@ -125,7 +125,7 @@ extension ViewControllerConta: UITableViewDelegate, UITableViewDataSource {
             let cellll2 = cellLog[indexPath.row]
             ce2.set(Cells: cellll2)
             if ce2.cell2label.text == "Finalizar sessão" {
-                ce2.cell2label.textColor = .blue
+                ce2.cell2label.textColor = UIColor(red: 52/255, green: 120/255, blue: 246/255, alpha: 1.0)
             } else if ce2.cell2label.text == "Deletar conta"{
                 ce2.cell2label.textColor = .red
             }
@@ -139,15 +139,12 @@ extension ViewControllerConta: UITableViewDelegate, UITableViewDataSource {
         if indexPath.section == 0 {
             if indexPath.row == 0 {
                 
-//                storyboard?.instantiateViewController(identifier: )
-//                let nextView = UIStoryboard.instantiateViewController(ViewControllerForneced)//ViewControllerFornecedor()
-//                self.navigationController?.pushViewController(nextView, animated: true)
-                
                 tableView.deselectRow(at: indexPath, animated: true)
             }
         } else if indexPath.section == 1 {
             if indexPath.row == 0 {
-                print("1")
+                let myViewController = ListaFornecedoresViewController(nibName: "ListaFornecedoresViewController", bundle: nil)
+                navigationController?.pushViewController(myViewController, animated: true)
                 tableView.deselectRow(at: indexPath, animated: true)
             }
             else if indexPath.row == 1 {
@@ -189,9 +186,9 @@ extension ViewControllerConta {
         return [c0]
     }
     func fecthData() -> [cells]{
-        let c1 = cells(image: UIImage(systemName: "bookmark.fill")!, title: "Fornecedores salvos", label: UIImage(systemName: "chevron.right")!)
-        let c2 = cells(image: UIImage(systemName: "bubble.left")!, title: "Comentários feitos", label: UIImage(systemName: "chevron.right")!)
-        let c3 = cells(image: UIImage(systemName: "bell.badge")!, title: "Notificações", label: UIImage(systemName: "chevron.right")!)
+        let c1 = cells(image: UIImage(systemName: "bookmark.fill")!, title: "Fornecedores salvos")
+        let c2 = cells(image: UIImage(systemName: "bubble.left")!, title: "Comentários feitos")
+        let c3 = cells(image: UIImage(systemName: "bell.badge")!, title: "Notificações")
         
         return [c1, c2, c3]
     }

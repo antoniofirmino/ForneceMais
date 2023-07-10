@@ -13,7 +13,9 @@ class ListaFornecedoresViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        
+        title = "Fornecedores salvos"
+        navigationItem.largeTitleDisplayMode = .never
+        //navigationController?.navigationBar.prefersLargeTitles = false
     }
     private func setupTableView() {
         TableViewFornecedores.dataSource = self

@@ -13,7 +13,7 @@
         <!--Collection View Controller-->
         <scene sceneID="25j-jf-f0H">
             <objects>
-                <collectionViewController storyboardIdentifier="CollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="28w-UW-7b6" customClass="CollectionViewController" customModule="beluga" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="CollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="28w-UW-7b6" customClass="CollectionViewController" customModule="ForneceMais" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="38g-kk-2yl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,7 +25,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="yXI-iR-Grp" customClass="CollectionViewCell" customModule="beluga" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="yXI-iR-Grp" customClass="CollectionViewCell" customModule="ForneceMais" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fyA-cQ-FOx">
@@ -61,7 +61,7 @@
         <!--View Controller Fornecedor-->
         <scene sceneID="oTm-7k-nWV">
             <objects>
-                <viewController storyboardIdentifier="cardFornecedor" id="V9P-mn-Mdb" customClass="ViewControllerFornecedor" customModule="beluga" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="cardFornecedor" id="V9P-mn-Mdb" customClass="ViewControllerFornecedor" customModule="ForneceMais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Swa-A8-F1j">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,7 +140,7 @@
         <!--Comentarios Table View Controller-->
         <scene sceneID="84L-zE-NrE">
             <objects>
-                <tableViewController id="2Fp-ye-QT0" customClass="ComentariosTableViewController" customModule="beluga" customModuleProvider="target" sceneMemberID="viewController"/>
+                <tableViewController id="2Fp-ye-QT0" customClass="ComentariosTableViewController" customModule="ForneceMais" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tSq-sn-fML" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1939.6946564885495" y="-118.30985915492958"/>
@@ -153,7 +153,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bPG-Eo-TmP" customClass="CommentCard" customModule="beluga" customModuleProvider="target">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bPG-Eo-TmP" customClass="CommentCard" customModule="ForneceMais" customModuleProvider="target">
                                 <rect key="frame" x="16" y="19" width="361" height="160"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -208,19 +208,13 @@
         <!--View Controller Busca-->
         <scene sceneID="yKB-Nz-64i">
             <objects>
-                <viewController storyboardIdentifier="buscar" id="Y84-w2-1fz" customClass="ViewControllerBusca" customModule="beluga" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="buscar" id="Y84-w2-1fz" customClass="ViewControllerBusca" customModule="ForneceMais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L8N-2r-jQd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buscar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGS-he-185">
-                                <rect key="frame" x="8" y="67" width="130" height="48"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <searchBar contentMode="redraw" text="Busque por um fornecedor" translatesAutoresizingMaskIntoConstraints="NO" id="KZu-jk-qgY">
-                                <rect key="frame" x="8" y="139" width="377" height="56"/>
+                            <searchBar contentMode="redraw" ambiguous="YES" text="Busque por um fornecedor" translatesAutoresizingMaskIntoConstraints="NO" id="KZu-jk-qgY">
+                                <rect key="frame" x="8" y="123" width="377" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="Y84-w2-1fz" id="BdE-Ph-hLv"/>
@@ -231,11 +225,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="KZu-jk-qgY" firstAttribute="leading" secondItem="6cn-yq-ZkW" secondAttribute="leading" constant="8" id="NLP-XY-9Py"/>
-                            <constraint firstItem="KZu-jk-qgY" firstAttribute="top" secondItem="ZGS-he-185" secondAttribute="bottom" constant="24" id="PBb-69-tzb"/>
-                            <constraint firstItem="6cn-yq-ZkW" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZGS-he-185" secondAttribute="trailing" symbolic="YES" id="PqA-fe-ITu"/>
-                            <constraint firstItem="ZGS-he-185" firstAttribute="top" secondItem="6cn-yq-ZkW" secondAttribute="top" constant="8" id="dOk-pt-EJI"/>
                             <constraint firstAttribute="trailing" secondItem="KZu-jk-qgY" secondAttribute="trailing" constant="8" id="gEW-Yx-c8e"/>
-                            <constraint firstItem="ZGS-he-185" firstAttribute="leading" secondItem="6cn-yq-ZkW" secondAttribute="leading" constant="8" id="guG-zj-Khv"/>
                         </constraints>
                     </view>
                 </viewController>
