@@ -8,19 +8,36 @@
 import UIKit
 
 class CelulaFornecedoresTableViewCell: UITableViewCell {
-
- 
-
+        @IBOutlet weak var ligNome: UILabel!
+        @IBOutlet weak var ligNicho: UILabel!
+        @IBOutlet weak var ligImagem: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    
+    func initData(Nome: String , Nicho: String , Imagem : UIImage) {
+        ligNome.text = Nome
+        ligNicho.text = Nicho
+        ligImagem.image = Imagem
+    }
+}
 
-        // Configure the view for the selected state
+
+
+
+
+class ViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let rect = CGRect(x: 100, y: 100, width: 120, height: 240)
+        let newView = CelulaFornecedoresTableViewCell(frame: rect)
+        self.view.addSubview(newView)
     }
     
 }
