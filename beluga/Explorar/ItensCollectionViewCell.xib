@@ -50,7 +50,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="dUa-X8-87m" firstAttribute="top" secondItem="A5W-Uf-AzU" secondAttribute="bottom" constant="8" id="4g3-Qh-c0y"/>
                                     <constraint firstItem="A5W-Uf-AzU" firstAttribute="top" secondItem="IXT-eM-Yzv" secondAttribute="top" constant="8" id="Bkv-1y-Ygv"/>
@@ -97,11 +97,11 @@
     </objects>
     <resources>
         <image name="bookmark" catalog="system" width="110" height="128"/>
-        <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
