@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     // MARK: - Core Data mocked data
+    //mokar dados
     let fornecedores = [
         [
             "nome": "Calce Bem",
