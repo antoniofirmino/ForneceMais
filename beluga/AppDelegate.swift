@@ -31,6 +31,55 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+    // MARK: - Core Data mocked data
+    let fornecedores = [
+        [
+            "nome": "Calce Bem",
+            "nicho": "Calçados",
+            "imagem": "roupas"
+        ],
+        [
+            "nome": "Valentino Carnes",
+            "nicho": "Alimentos",
+            "imagem": "alimentos"
+        ],
+        [
+            "nome": "Dal Santo",
+            "nicho": "Alimentos",
+            "imagem": "alimentos"
+        ],
+        [
+            "nome": "Uliana",
+            "nicho": "Alimentos",
+            "imagem": "alimentos"
+        ],
+        [
+            "nome": "Afia Fácil",
+            "nicho": "Cozinha",
+            "imagem": "cozinha"
+        ],
+        [
+            "nome": "Talheres Import",
+            "nicho": "Cozinha",
+            "imagem": "cozinha"
+        ],
+        [
+            "nome": "La Plata",
+            "nicho": "Semijoias",
+            "imagem": "semijoias"
+        ],
+        [
+            "nome": "Kapbom",
+            "nicho": "Eletrônicos",
+            "imagem": "eletronicos"
+        ],
+        [
+            "nome": "Knup",
+            "nicho": "Eletrônicos",
+            "imagem": "eletronicos"
+        ],
+    ]
 
     // MARK: - Core Data stack
       lazy var persistentContainer: NSPersistentContainer = {
@@ -56,6 +105,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             fatalError("Unresolved error \(error), \(error.userInfo)")
           }
         })
+        let viewContext = container.viewContext
+          for fornecedor in fornecedores {
+              let novoFornecedor = Fornecedor(context: viewContext)
+              novoFornecedor.nome = fornecedor["nome"]
+              novoFornecedor.nicho = fornecedor["nicho"]
+              novoFornecedor.imagem = fornecedor["imagem"]
+              saveContext()
+          }
         return container
       }()
       // MARK: - Core Data Saving support
