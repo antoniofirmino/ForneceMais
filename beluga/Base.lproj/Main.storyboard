@@ -219,7 +219,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar contentMode="redraw" text="Busque por um fornecedor" translatesAutoresizingMaskIntoConstraints="NO" id="KZu-jk-qgY">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" text="Busque por um fornecedor" translatesAutoresizingMaskIntoConstraints="NO" id="KZu-jk-qgY">
                                 <rect key="frame" x="8" y="139" width="377" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
