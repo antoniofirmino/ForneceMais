@@ -17,7 +17,7 @@ class ItensCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        nichoCollectionCell.text = "alimentação"
+        nichoCollectionCell.text = "Alimentação"
         starsCollectionCell.image = UIImage(named: "Frame 21")
         forncedorNameCollectionCell.text = "Fornecedor 1"
         cardView.layer.cornerRadius = 14

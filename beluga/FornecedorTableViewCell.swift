@@ -31,6 +31,7 @@ class FornecedorTableViewCell: UITableViewCell {
     
     private func setupTableView(){
         collectionViewControllerOfTableCell.dataSource = self
+        collectionViewControllerOfTableCell.delegate = self
         collectionViewControllerOfTableCell.register(UINib(nibName: "ItensCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ItensCollectionViewCell")
     }
     
@@ -38,7 +39,7 @@ class FornecedorTableViewCell: UITableViewCell {
 }
 
 
-extension FornecedorTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
+extension FornecedorTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
@@ -54,13 +55,9 @@ extension FornecedorTableViewCell: UICollectionViewDataSource, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        if collectionView.isDragging {
-            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        } else {
-            return UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 0)
-        }
-    }
-    
+            return UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+       }
 
+  
 }
 

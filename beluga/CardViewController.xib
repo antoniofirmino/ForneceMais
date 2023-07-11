@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,19 +21,26 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6t3-ly-Baf">
-                    <rect key="frame" x="16" y="59" width="377" height="759"/>
-                    <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="separatorColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="6t3-ly-Baf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="2dz-ab-GPs"/>
+                <constraint firstItem="6t3-ly-Baf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2dz-ab-GPs"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6t3-ly-Baf" secondAttribute="bottom" id="BwD-3J-HFX"/>
                 <constraint firstItem="6t3-ly-Baf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="QSv-Fr-iKQ"/>
+                <constraint firstItem="6t3-ly-Baf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aAu-mi-d2f"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6t3-ly-Baf" secondAttribute="trailing" id="vbH-Pg-LRS"/>
             </constraints>
             <point key="canvasLocation" x="139.69465648854961" y="-17.605633802816904"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

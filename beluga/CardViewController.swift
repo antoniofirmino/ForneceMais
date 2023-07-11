@@ -62,7 +62,7 @@ extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 1 {
-            return 40
+            return 25
         } else {
             return 0
         }
