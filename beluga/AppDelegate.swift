@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: - Core Data mocked data
     //mokar dados
-    let fornecedores = [
+    let ListaDeFornecedores = [
         [
             "nome": "Calce Bem",
             "nicho": "Calçados",
@@ -90,7 +90,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "TesteCoreDataUIKit")
+        let container = NSPersistentContainer(name: "ForneceMais")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
           if let error = error as NSError? {
             // Replace this implementation with code to handle the error appropriately.
@@ -107,7 +107,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           }
         })
         let viewContext = container.viewContext
-          for fornecedor in fornecedores {
+          for fornecedor in ListaDeFornecedores {
               let novoFornecedor = Fornecedor(context: viewContext)
               novoFornecedor.nome = fornecedor["nome"]
               novoFornecedor.nicho = fornecedor["nicho"]

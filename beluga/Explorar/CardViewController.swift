@@ -10,12 +10,34 @@ import UIKit
 class CardViewController: UIViewController {
     
     @IBOutlet weak var listCardTableView: UITableView!
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var items: [Fornecedor]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         title = "Explorar"
         navigationController?.navigationBar.prefersLargeTitles = true
         
+        
+        fetchFornecedores()
+        
+        
+    }
+    
+    func fetchFornecedores() {
+        //Fetch the data from Core Data to display in the tableView
+        do {
+            self.items = try context.fetch(Fornecedor.fetchRequest())
+            
+            DispatchQueue.main.async {
+                self.listCardTableView.reloadData()
+            }
+        }
+        catch {
+            
+        }
     }
     
     private func setupTableView(){
@@ -49,6 +71,11 @@ extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "FornecedorTableViewCell", for: indexPath) as? FornecedorTableViewCell else {
                 fatalError()
             }
+            
+            let fornecedor = self.items![0]
+            print(fornecedor.nome ?? 0)
+            cell.textLabel?.text = fornecedor.nome
+            
             return cell
         } else {
             print(indexPath)
