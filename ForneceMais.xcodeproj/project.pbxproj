@@ -128,6 +128,7 @@
 				FB5E51742A55A84D004BA315 /* navController.swift */,
 				C5B872022A4DA62B009B5BF3 /* AppDelegate.swift */,
 				C5B872042A4DA62B009B5BF3 /* SceneDelegate.swift */,
+				FB8003362A5D707A00E6D991 /* Buscar */,
 				1E1E5DD32A543D89006014DD /* Components */,
 				FBF34BAC2A56DC05003898AB /* Conta */,
 				FB540A372A5C408700A04568 /* Explorar */,
@@ -136,10 +137,6 @@
 				1E5BF8C72A55B67E004FA3B8 /* ComentariosTableViewController.swift */,
 				C09168AE2A534290002F7794 /* Course.swift */,
 				C5B872082A4DA62B009B5BF3 /* Main.storyboard */,
-				C536C0142A5C433D009A8093 /* Categorias.swift */,
-				C536C0162A5C53E4009A8093 /* SearchViewController.swift */,
-				C536C0102A5C317A009A8093 /* BuscarViewController.swift */,
-				C536C00E2A5C2ED5009A8093 /* BuscarCollectionViewCell.swift */,
 				C5B8720D2A4DA62C009B5BF3 /* LaunchScreen.storyboard */,
 				C5B8720B2A4DA62C009B5BF3 /* Assets.xcassets */,
 				C5B872102A4DA62C009B5BF3 /* Info.plist */,
@@ -172,6 +169,17 @@
 				32A9C9872A55A16500C6181F /* CelulaFornecedoresTableViewCell.swift */,
 			);
 			path = "Lista de fornecedores";
+			sourceTree = "<group>";
+		};
+		FB8003362A5D707A00E6D991 /* Buscar */ = {
+			isa = PBXGroup;
+			children = (
+				C536C00E2A5C2ED5009A8093 /* BuscarCollectionViewCell.swift */,
+				C536C0102A5C317A009A8093 /* BuscarViewController.swift */,
+				C536C0142A5C433D009A8093 /* Categorias.swift */,
+				C536C0162A5C53E4009A8093 /* SearchViewController.swift */,
+			);
+			path = Buscar;
 			sourceTree = "<group>";
 		};
 		FBF34BAC2A56DC05003898AB /* Conta */ = {
