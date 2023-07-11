@@ -213,21 +213,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buscar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGS-he-185">
-                                <rect key="frame" x="8" y="67" width="130" height="48"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" text="Busque por um fornecedor" translatesAutoresizingMaskIntoConstraints="NO" id="KZu-jk-qgY">
-                                <rect key="frame" x="8" y="67" width="377" height="56"/>
+                                <rect key="frame" x="8" y="59" width="377" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="Y84-w2-1fz" id="BdE-Ph-hLv"/>
                                 </connections>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="V4U-Qx-fBd">
-                                <rect key="frame" x="8" y="147" width="377" height="679"/>
+                                <rect key="frame" x="16" y="131" width="361" height="695"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jhk-t6-9bo">
                                     <size key="itemSize" width="194" height="116"/>
@@ -284,11 +278,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="V4U-Qx-fBd" firstAttribute="bottom" secondItem="6cn-yq-ZkW" secondAttribute="bottom" constant="8" id="1ru-QH-ijp"/>
-                            <constraint firstItem="V4U-Qx-fBd" firstAttribute="top" secondItem="KZu-jk-qgY" secondAttribute="bottom" constant="24" id="207-Jr-l0D"/>
-                            <constraint firstItem="KZu-jk-qgY" firstAttribute="top" secondItem="6cn-yq-ZkW" secondAttribute="top" constant="8" id="59s-dy-Ijr"/>
+                            <constraint firstItem="V4U-Qx-fBd" firstAttribute="top" secondItem="KZu-jk-qgY" secondAttribute="bottom" constant="16" id="207-Jr-l0D"/>
+                            <constraint firstItem="KZu-jk-qgY" firstAttribute="top" secondItem="6cn-yq-ZkW" secondAttribute="top" id="59s-dy-Ijr"/>
                             <constraint firstItem="KZu-jk-qgY" firstAttribute="leading" secondItem="6cn-yq-ZkW" secondAttribute="leading" constant="8" id="NLP-XY-9Py"/>
-                            <constraint firstItem="V4U-Qx-fBd" firstAttribute="leading" secondItem="6cn-yq-ZkW" secondAttribute="leading" constant="8" id="Okb-Ac-3Qy"/>
-                            <constraint firstItem="6cn-yq-ZkW" firstAttribute="trailing" secondItem="V4U-Qx-fBd" secondAttribute="trailing" constant="8" id="P3Q-JR-awe"/>
+                            <constraint firstItem="V4U-Qx-fBd" firstAttribute="leading" secondItem="6cn-yq-ZkW" secondAttribute="leading" constant="16" id="Okb-Ac-3Qy"/>
+                            <constraint firstItem="6cn-yq-ZkW" firstAttribute="trailing" secondItem="V4U-Qx-fBd" secondAttribute="trailing" constant="16" id="P3Q-JR-awe"/>
                             <constraint firstAttribute="trailing" secondItem="KZu-jk-qgY" secondAttribute="trailing" constant="8" id="gEW-Yx-c8e"/>
                         </constraints>
                     </view>
