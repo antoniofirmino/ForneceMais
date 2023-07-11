@@ -3,7 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -205,33 +205,94 @@
             </objects>
             <point key="canvasLocation" x="1006.8702290076335" y="612.67605633802816"/>
         </scene>
-        <!--View Controller Busca-->
+        <!--Search View Controller-->
         <scene sceneID="yKB-Nz-64i">
             <objects>
-                <viewController storyboardIdentifier="buscar" id="Y84-w2-1fz" customClass="ViewControllerBusca" customModule="ForneceMais" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="buscar" id="Y84-w2-1fz" customClass="SearchViewController" customModule="ForneceMais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L8N-2r-jQd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" ambiguous="YES" text="Busque por um fornecedor" translatesAutoresizingMaskIntoConstraints="NO" id="KZu-jk-qgY">
-                                <rect key="frame" x="8" y="123" width="377" height="56"/>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" text="Busque por um fornecedor" translatesAutoresizingMaskIntoConstraints="NO" id="KZu-jk-qgY">
+                                <rect key="frame" x="8" y="59" width="377" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="Y84-w2-1fz" id="BdE-Ph-hLv"/>
                                 </connections>
                             </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="V4U-Qx-fBd">
+                                <rect key="frame" x="16" y="131" width="361" height="695"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jhk-t6-9bo">
+                                    <size key="itemSize" width="194" height="116"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BuscarCollectionViewCell" id="5wh-gw-6HT" customClass="BuscarCollectionViewCell" customModule="ForneceMais" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="172" height="106"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ao5-oY-xB1">
+                                            <rect key="frame" x="0.0" y="0.0" width="172" height="106"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="lAs-zd-Mwm">
+                                                    <rect key="frame" x="0.0" y="0.0" width="172" height="76"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="76" id="nwU-ec-53T"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="14"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" text="teste" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckD-vl-wjY">
+                                                    <rect key="frame" x="0.0" y="84" width="172" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lAs-zd-Mwm" firstAttribute="top" secondItem="Ao5-oY-xB1" secondAttribute="top" id="KN6-7W-niE"/>
+                                                <constraint firstAttribute="trailing" secondItem="lAs-zd-Mwm" secondAttribute="trailing" id="KTz-bJ-Z96"/>
+                                                <constraint firstAttribute="bottom" secondItem="ckD-vl-wjY" secondAttribute="bottom" id="Scv-Qw-KLg"/>
+                                                <constraint firstItem="lAs-zd-Mwm" firstAttribute="leading" secondItem="Ao5-oY-xB1" secondAttribute="leading" id="SeO-ts-eRV"/>
+                                                <constraint firstItem="ckD-vl-wjY" firstAttribute="leading" secondItem="Ao5-oY-xB1" secondAttribute="leading" id="h98-pO-pXs"/>
+                                                <constraint firstAttribute="trailing" secondItem="ckD-vl-wjY" secondAttribute="trailing" id="lCW-cT-4GU"/>
+                                                <constraint firstItem="ckD-vl-wjY" firstAttribute="top" secondItem="lAs-zd-Mwm" secondAttribute="bottom" constant="8" symbolic="YES" id="okK-uF-aFN"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="172" height="106"/>
+                                        <connections>
+                                            <outlet property="buscarImageView" destination="lAs-zd-Mwm" id="HPi-2o-Ht3"/>
+                                            <outlet property="titleLabel" destination="ckD-vl-wjY" id="xlN-Gr-Kzc"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6cn-yq-ZkW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="V4U-Qx-fBd" firstAttribute="bottom" secondItem="6cn-yq-ZkW" secondAttribute="bottom" constant="8" id="1ru-QH-ijp"/>
+                            <constraint firstItem="V4U-Qx-fBd" firstAttribute="top" secondItem="KZu-jk-qgY" secondAttribute="bottom" constant="16" id="207-Jr-l0D"/>
+                            <constraint firstItem="KZu-jk-qgY" firstAttribute="top" secondItem="6cn-yq-ZkW" secondAttribute="top" id="59s-dy-Ijr"/>
                             <constraint firstItem="KZu-jk-qgY" firstAttribute="leading" secondItem="6cn-yq-ZkW" secondAttribute="leading" constant="8" id="NLP-XY-9Py"/>
+                            <constraint firstItem="V4U-Qx-fBd" firstAttribute="leading" secondItem="6cn-yq-ZkW" secondAttribute="leading" constant="16" id="Okb-Ac-3Qy"/>
+                            <constraint firstItem="6cn-yq-ZkW" firstAttribute="trailing" secondItem="V4U-Qx-fBd" secondAttribute="trailing" constant="16" id="P3Q-JR-awe"/>
                             <constraint firstAttribute="trailing" secondItem="KZu-jk-qgY" secondAttribute="trailing" constant="8" id="gEW-Yx-c8e"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buscaCollectionView" destination="V4U-Qx-fBd" id="12S-Ti-K4u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ak3-UF-Tfo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3006.8702290076335" y="612.67605633802816"/>
+            <point key="canvasLocation" x="116.79389312977099" y="695.77464788732402"/>
         </scene>
     </scenes>
     <resources>
