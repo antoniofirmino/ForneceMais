@@ -11,8 +11,8 @@ class CardViewController: UIViewController {
     
     @IBOutlet weak var listCardTableView: UITableView!
     
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    var items: [Fornecedor]?
+//    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+//    var items: [Fornecedor]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,24 +21,24 @@ class CardViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         
         
-        fetchFornecedores()
+        //fetchFornecedores()
         
         
     }
     
-    func fetchFornecedores() {
-        //Fetch the data from Core Data to display in the tableView
-        do {
-            self.items = try context.fetch(Fornecedor.fetchRequest())
-            
-            DispatchQueue.main.async {
-                self.listCardTableView.reloadData()
-            }
-        }
-        catch {
-            
-        }
-    }
+//    func fetchFornecedores() {
+//        //Fetch the data from Core Data to display in the tableView
+//        do {
+//            self.items = try context.fetch(Fornecedor.fetchRequest())
+//            
+//            DispatchQueue.main.async {
+//                self.listCardTableView.reloadData()
+//            }
+//        }
+//        catch {
+//            
+//        }
+//    }
     
     private func setupTableView(){
         listCardTableView.dataSource = self
@@ -72,9 +72,9 @@ extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
                 fatalError()
             }
             
-            let fornecedor = self.items![0]
-            print(fornecedor.nome ?? 0)
-            cell.textLabel?.text = fornecedor.nome
+//            let fornecedor = self.items![0]
+//            print(fornecedor.nome ?? 0)
+//            cell.textLabel?.text = fornecedor.nome
             
             return cell
         } else {
