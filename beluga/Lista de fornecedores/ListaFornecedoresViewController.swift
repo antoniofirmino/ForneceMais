@@ -13,10 +13,13 @@ class ListaFornecedoresViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        
+        title = "Fornecedores salvos"
+        navigationItem.largeTitleDisplayMode = .never
+        //navigationController?.navigationBar.prefersLargeTitles = false
     }
     private func setupTableView() {
         TableViewFornecedores.dataSource = self
+        TableViewFornecedores.delegate = self
         TableViewFornecedores.register(UINib(nibName: "CelulaFornecedoresTableViewCell", bundle: nil), forCellReuseIdentifier: "CelulaFornecedoresTableViewCell")
         
     }
@@ -27,14 +30,14 @@ class ListaFornecedoresViewController: UIViewController {
 
 extension ListaFornecedoresViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return Fornecedores.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CelulaFornecedoresTableViewCell", for: indexPath) as? CelulaFornecedoresTableViewCell
         else {
             fatalError()
         }
-//        cell.ligacao1.text = "Fornecedor"
+        cell.initData(Nome: Fornecedores[indexPath.row]["name"]!  , Nicho: Fornecedores[indexPath.row]["nicho"]!, Imagem: UIImage(named : Fornecedores[indexPath.row]["image"]!)!)
         return cell
     }
     
@@ -48,3 +51,24 @@ extension ListaFornecedoresViewController: UITableViewDataSource, UITableViewDel
     }
 
 }
+
+
+let Fornecedores = [
+    [
+        "name": "Ricardo",
+        "nicho":"Bebidas",
+        "image": "Frutas"
+    ],
+    
+    [
+        "name": "Joao",
+        "nicho":"Comida",
+        "image": "Frutas"
+    ],
+    
+    [
+        "name": "Renan",
+        "nicho":"Peças",
+        "image": "Frutas"
+    ]
+]
