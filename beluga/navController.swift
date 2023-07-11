@@ -14,37 +14,38 @@ class navController: UITabBarController {
         
         view.backgroundColor = .systemBackground
         
+        //primeira view, explorar
         let myViewController = CardViewController(nibName: "CardViewController", bundle: nil)
-        self.present(myViewController, animated: true, completion: nil)
         myViewController.tabBarItem.image = UIImage(systemName: "doc.text.image")
-        myViewController.tabBarItem.selectedImage = UIImage(systemName: "doc.text.image")?.withTintColor(.blue)
-        
-        let vc1 = UINavigationController(rootViewController: ViewControllerConta())
-        
-        vc1.tabBarItem.image = UIImage(systemName: "person.crop.circle")
-        vc1.tabBarItem.selectedImage = UIImage(systemName: "person.crop.circle")?.withTintColor(.blue)
-        
-        //_ = UINavigationController(rootViewController: ViewControllerFornecedor())
+        myViewController.tabBarItem.selectedImage = UIImage(systemName: "doc.text.image.fill")?.withTintColor(.blue)
+        let vc0 = UINavigationController(rootViewController: myViewController)
+        vc0.title = "Explorar"
+        self.present(vc0, animated: true, completion: nil)
         
         
+        //terceira view, conta
+        let vc2 = UINavigationController(rootViewController: ViewControllerConta())
+        vc2.tabBarItem.image = UIImage(systemName: "person.crop.circle")
+        vc2.tabBarItem.selectedImage = UIImage(systemName: "person.crop.circle.fill")?.withTintColor(.blue)
+        vc2.title = "Conta"
+        self.present(vc2, animated: true, completion: nil)
         
         
-        
-        
-        
+        //segunda view, buscas
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "buscar")
-        self.present(vc, animated: true)
-        vc.tabBarItem.image = UIImage(systemName: "magnifyingglass")
-        vc.tabBarItem.selectedImage = UIImage(systemName: "magnifyingglass")?.withTintColor(.blue)
+        let story = storyboard.instantiateViewController(withIdentifier: "buscar")
+        let vc1 = UINavigationController(rootViewController: story)
+        vc1.title = "Buscar"
+        self.present(vc1, animated: true, completion: nil)
+        vc1.tabBarItem.image = UIImage(systemName: "magnifyingglass")
+        vc1.tabBarItem.selectedImage = UIImage(systemName: "magnifyingglass.fill")?.withTintColor(.blue)
+       
         
         
         
         
         
-        
-        
-        setViewControllers([myViewController,vc, vc1], animated: true)
+        setViewControllers([vc0,vc1, vc2], animated: true)
         
         
         

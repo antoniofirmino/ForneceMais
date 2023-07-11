@@ -220,14 +220,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" text="Busque por um fornecedor" translatesAutoresizingMaskIntoConstraints="NO" id="KZu-jk-qgY">
-                                <rect key="frame" x="8" y="139" width="377" height="56"/>
+                                <rect key="frame" x="8" y="67" width="377" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="Y84-w2-1fz" id="BdE-Ph-hLv"/>
                                 </connections>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="V4U-Qx-fBd">
-                                <rect key="frame" x="8" y="219" width="377" height="607"/>
+                                <rect key="frame" x="8" y="147" width="377" height="679"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jhk-t6-9bo">
                                     <size key="itemSize" width="194" height="116"/>
@@ -285,14 +285,11 @@
                         <constraints>
                             <constraint firstItem="V4U-Qx-fBd" firstAttribute="bottom" secondItem="6cn-yq-ZkW" secondAttribute="bottom" constant="8" id="1ru-QH-ijp"/>
                             <constraint firstItem="V4U-Qx-fBd" firstAttribute="top" secondItem="KZu-jk-qgY" secondAttribute="bottom" constant="24" id="207-Jr-l0D"/>
+                            <constraint firstItem="KZu-jk-qgY" firstAttribute="top" secondItem="6cn-yq-ZkW" secondAttribute="top" constant="8" id="59s-dy-Ijr"/>
                             <constraint firstItem="KZu-jk-qgY" firstAttribute="leading" secondItem="6cn-yq-ZkW" secondAttribute="leading" constant="8" id="NLP-XY-9Py"/>
                             <constraint firstItem="V4U-Qx-fBd" firstAttribute="leading" secondItem="6cn-yq-ZkW" secondAttribute="leading" constant="8" id="Okb-Ac-3Qy"/>
                             <constraint firstItem="6cn-yq-ZkW" firstAttribute="trailing" secondItem="V4U-Qx-fBd" secondAttribute="trailing" constant="8" id="P3Q-JR-awe"/>
-                            <constraint firstItem="KZu-jk-qgY" firstAttribute="top" secondItem="ZGS-he-185" secondAttribute="bottom" constant="24" id="PBb-69-tzb"/>
-                            <constraint firstItem="6cn-yq-ZkW" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZGS-he-185" secondAttribute="trailing" symbolic="YES" id="PqA-fe-ITu"/>
-                            <constraint firstItem="ZGS-he-185" firstAttribute="top" secondItem="6cn-yq-ZkW" secondAttribute="top" constant="8" id="dOk-pt-EJI"/>
                             <constraint firstAttribute="trailing" secondItem="KZu-jk-qgY" secondAttribute="trailing" constant="8" id="gEW-Yx-c8e"/>
-                            <constraint firstItem="ZGS-he-185" firstAttribute="leading" secondItem="6cn-yq-ZkW" secondAttribute="leading" constant="8" id="guG-zj-Khv"/>
                         </constraints>
                     </view>
                     <connections>

@@ -12,6 +12,8 @@ class  SearchViewController: UIViewController {
     @IBOutlet weak var buscaCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Busca"
+        navigationController?.navigationBar.prefersLargeTitles = true
 
         buscaCollectionView.dataSource = self
         buscaCollectionView.delegate = self

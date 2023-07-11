@@ -34,6 +34,7 @@ class FornecedorTableViewCell: UITableViewCell {
         collectionViewControllerOfTableCell.register(UINib(nibName: "ItensCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ItensCollectionViewCell")
     }
     
+  
 }
 
 

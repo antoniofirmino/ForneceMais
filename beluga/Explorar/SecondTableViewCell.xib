@@ -36,6 +36,7 @@
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ap-hQ-QPV">
                                 <rect key="frame" x="80" y="6" width="44" height="20"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,14 +51,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOD-JC-6tP">
                                 <rect key="frame" x="80" y="56" width="95" height="18"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="BBt-TF-Ned"/>
+                                    <constraint firstAttribute="width" constant="100" id="BBt-TF-Ned"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2Ap-hQ-QPV" firstAttribute="top" secondItem="tQU-MQ-Dcw" secondAttribute="top" constant="6" id="3it-bd-Fet"/>
                             <constraint firstAttribute="bottom" secondItem="wjc-zw-aLi" secondAttribute="bottom" constant="8" id="5nO-NS-o4m"/>
@@ -82,10 +83,12 @@
                     <constraint firstItem="tQU-MQ-Dcw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="206-zi-oDC"/>
                     <constraint firstItem="tQU-MQ-Dcw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HmP-03-m6V"/>
                     <constraint firstAttribute="bottom" secondItem="tQU-MQ-Dcw" secondAttribute="bottom" id="PVa-8J-HPV"/>
+                    <constraint firstAttribute="trailing" secondItem="tQU-MQ-Dcw" secondAttribute="trailing" constant="10" id="ajg-jM-4Mi"/>
                     <constraint firstAttribute="trailing" secondItem="tQU-MQ-Dcw" secondAttribute="trailing" id="hlM-XH-icd"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
             <connections>
                 <outlet property="cardStarsTableCell" destination="d8x-Z7-hPh" id="tLW-KP-xoJ"/>
                 <outlet property="fornecedorNameTableCell" destination="2Ap-hQ-QPV" id="c6J-PU-7SF"/>
@@ -96,6 +99,9 @@
     </objects>
     <resources>
         <image name="bookmark" catalog="system" width="110" height="128"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
