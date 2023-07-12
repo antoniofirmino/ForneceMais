@@ -80,6 +80,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             "nicho": "Eletrônicos",
             "imagem": "eletronicos"
         ],
+        [
+            "nome": "Água pura",
+            "nicho": "Bebidas",
+            "imagem": "bebidas"
+        ]
     ]
 
     // MARK: - Core Data stack
