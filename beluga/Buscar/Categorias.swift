@@ -18,5 +18,5 @@ let categorias: [Categorias] = [
     Categorias(title: "Cozinha", image: UIImage.init(named: "cozinha")!),
     Categorias(title: "Eletrônicos", image: UIImage.init(named: "eletronicos")!),
     Categorias(title: "Roupas", image: UIImage.init(named: "roupas")!),
-    Categorias(title: "Semi-joias", image: UIImage.init(named: "semijoias")!)
+    Categorias(title: "Semijoias", image: UIImage.init(named: "semijoias")!)
 ]
