@@ -12,6 +12,7 @@ class FornecedorTableViewCell: UITableViewCell {
     //    @IBOutlet weak var iconView: UIView!
     //    @IBOutlet weak var nameLabel: UILabel!
     //    @IBOutlet weak var myImageView: UIImageView!
+    var listaFornecedores: [Fornecedor] = []
     
     
     @IBOutlet weak var collectionViewControllerOfTableCell: UICollectionView!
@@ -50,7 +51,9 @@ extension FornecedorTableViewCell: UICollectionViewDataSource, UICollectionViewD
         guard let countryCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItensCollectionViewCell", for: indexPath) as? ItensCollectionViewCell else {
             fatalError()
         }
-        
+        countryCell.forncedorNameCollectionCell.text = listaFornecedores[indexPath.row].nome
+        //countryCell.starsCollectionCell.image = 
+        countryCell.nichoCollectionCell.text = listaFornecedores[indexPath.row].nicho
         return countryCell
     }
     
@@ -58,6 +61,9 @@ extension FornecedorTableViewCell: UICollectionViewDataSource, UICollectionViewD
             return UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
        }
 
+    func initData(fornecedores: [Fornecedor]) {
+        listaFornecedores = fornecedores
+    }
   
 }
 

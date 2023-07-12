@@ -32,9 +32,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
     
-    // MARK: - Core Data mocked data
+    // MARK: - Core Data mocked data 
     //mokar dados
-    let ListaDeFornecedores = [
+    static let ListaDeFornecedores = [
         [
             "nome": "Calce Bem",
             "nicho": "Calçados",
@@ -90,7 +90,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "ForneceMais")
+        let container = NSPersistentContainer(name: "BelugaData")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
           if let error = error as NSError? {
             // Replace this implementation with code to handle the error appropriately.
@@ -106,16 +106,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             fatalError("Unresolved error \(error), \(error.userInfo)")
           }
         })
-        let viewContext = container.viewContext
-          for fornecedor in ListaDeFornecedores {
-              let novoFornecedor = Fornecedor(context: viewContext)
-              novoFornecedor.nome = fornecedor["nome"]
-              novoFornecedor.nicho = fornecedor["nicho"]
-              novoFornecedor.imagem = fornecedor["imagem"]
-              saveContext()
-          }
+//        let viewContext = container.viewContext
+//          for fornecedor in AppDelegate.ListaDeFornecedores {
+//              let novoFornecedor = Fornecedor(context: viewContext)
+//              novoFornecedor.nome = fornecedor["nome"]
+//              novoFornecedor.nicho = fornecedor["nicho"]
+//              novoFornecedor.imagem = fornecedor["imagem"]
+//              saveContext()
+//          }
         return container
       }()
+    
+    
+    lazy var managedObjectContext: NSManagedObjectContext = {
+        return persistentContainer.viewContext
+    }()
+    
       // MARK: - Core Data Saving support
       func saveContext () {
         let context = persistentContainer.viewContext

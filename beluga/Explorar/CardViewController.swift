@@ -6,13 +6,15 @@
 //
 
 import UIKit
+import CoreData
 
 class CardViewController: UIViewController {
     
     @IBOutlet weak var listCardTableView: UITableView!
     
-//    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-//    var items: [Fornecedor]?
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    var fornecedorGlobal = [Fornecedor]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,24 +23,40 @@ class CardViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         
         
-        //fetchFornecedores()
+        for fornecedor in AppDelegate.ListaDeFornecedores {
+            let novoFornecedor = Fornecedor(context: context)
+            novoFornecedor.nome = fornecedor["nome"]
+            novoFornecedor.nicho = fornecedor["nicho"]
+            novoFornecedor.imagem = fornecedor["imagem"]
+            if !novoFornecedor.isInserted {
+                (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            }
+        }
         
-        
+        fornecedorGlobal = fetchFornecedores()
+        print("-------------------------")
+        for i in 0...8{
+            print(fornecedorGlobal[i].nome ?? 0)
+        }
+        print("-------------------------")
+         
     }
     
-//    func fetchFornecedores() {
-//        //Fetch the data from Core Data to display in the tableView
-//        do {
-//            self.items = try context.fetch(Fornecedor.fetchRequest())
-//            
-//            DispatchQueue.main.async {
-//                self.listCardTableView.reloadData()
-//            }
-//        }
-//        catch {
-//            
-//        }
-//    }
+    func fetchFornecedores() -> [Fornecedor] {
+        //Fetch the data from Core Data to display in the tableView
+
+        do {
+            let request = Fornecedor.fetchRequest() as NSFetchRequest<Fornecedor>
+            let fornecedor = try context.fetch(request)
+
+            //print(fornecedor)
+            
+            return fornecedor
+        }
+        catch {
+            return []
+        }
+    }
     
     private func setupTableView(){
         listCardTableView.dataSource = self
@@ -67,21 +85,24 @@ extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
         tableView.separatorColor = .clear
         
         if indexPath.section == 0 {
-            print(indexPath)
+            //print(indexPath)
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "FornecedorTableViewCell", for: indexPath) as? FornecedorTableViewCell else {
                 fatalError()
             }
             
 //            let fornecedor = self.items![0]
 //            print(fornecedor.nome ?? 0)
-//            cell.textLabel?.text = fornecedor.nome
+            cell.initData(fornecedores: fornecedorGlobal)
             
             return cell
         } else {
-            print(indexPath)
+            //print(indexPath)
             guard let cellCostumized = tableView.dequeueReusableCell(withIdentifier: "SecondTableViewCell", for: indexPath) as? SecondTableViewCell else {
                 fatalError()
             }
+            cellCostumized.fornecedorNameTableCell.text = fornecedorGlobal[indexPath.row].nome
+            cellCostumized.nichoCardTableCell.text = fornecedorGlobal[indexPath.row].nicho
+            cellCostumized.imageCardTableCell.image = UIImage(named: fornecedorGlobal[indexPath.row].imagem!)
             return cellCostumized
         }
         
