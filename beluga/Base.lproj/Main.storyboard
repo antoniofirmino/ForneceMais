@@ -3,7 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -104,7 +104,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="e65-JB-rPK" secondAttribute="bottom" constant="16" id="5O7-Yo-Qc5"/>
                                     <constraint firstItem="iME-C4-N9U" firstAttribute="leading" secondItem="AOQ-a5-021" secondAttribute="trailing" id="Bjb-HK-HAr"/>
@@ -124,7 +124,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jn5-x5-7Gr"/>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                         <color key="tintColor" systemColor="linkColor"/>
                         <constraints>
                             <constraint firstItem="hNf-TE-p50" firstAttribute="leading" secondItem="jn5-x5-7Gr" secondAttribute="leading" constant="16" id="MYf-gx-EHT"/>
@@ -132,6 +132,13 @@
                             <constraint firstItem="jn5-x5-7Gr" firstAttribute="trailing" secondItem="hNf-TE-p50" secondAttribute="trailing" constant="16" id="tLz-vl-hjE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="card" destination="hNf-TE-p50" id="UZL-bN-LPq"/>
+                        <outlet property="endereco" destination="Csy-yi-bgD" id="dbE-iR-ZhO"/>
+                        <outlet property="nomeFornecedor" destination="X51-96-bW7" id="ROa-0r-IPI"/>
+                        <outlet property="sobre" destination="e65-JB-rPK" id="PCF-Qd-E3H"/>
+                        <outlet property="telefone" destination="iME-C4-N9U" id="ip6-c5-S3M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YbU-KQ-RsC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -304,6 +311,12 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

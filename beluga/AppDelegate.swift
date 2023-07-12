@@ -38,52 +38,82 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         [
             "nome": "Calce Bem",
             "nicho": "Calçados",
-            "imagem": "roupas"
+            "imagem": "roupas",
+            "endereco": "Rua das Flores, 123 - Centro, São Paulo - SP, CEP 01000-000",
+            "telefone": "(11) 91234-5678",
+            "sobre": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
         ],
         [
             "nome": "Valentino Carnes",
             "nicho": "Alimentos",
-            "imagem": "alimentos"
+            "imagem": "alimentos",
+            "endereco": "Avenida Beira-Mar, 456 - Praia de Iracema, Fortaleza - CE, CEP 60000-000",
+            "telefone": "(11) 992345-6789",
+            "sobre": ""
         ],
         [
             "nome": "Dal Santo",
             "nicho": "Alimentos",
-            "imagem": "alimentos"
+            "imagem": "alimentos",
+            "endereco": "Travessa do Sol, 789 - Jardim Botânico, Curitiba - PR, CEP 80000-000",
+            "telefone": "(91) 3456-7890",
+            "sobre": ""
         ],
         [
             "nome": "Uliana",
             "nicho": "Alimentos",
-            "imagem": "alimentos"
+            "imagem": "alimentos",
+            "endereco": "Rua dos Pássaros, 321 - Jardim das Acácias, Belo Horizonte - MG, CEP 30000-000",
+            "telefone": "(11) 94567-8901",
+            "sobre": ""
         ],
         [
             "nome": "Afia Fácil",
             "nicho": "Cozinha",
-            "imagem": "cozinha"
+            "imagem": "cozinha",
+            "endereco": "Avenida da Liberdade, 987 - Copacabana, Rio de Janeiro - RJ, CEP 20000-000",
+            "telefone": "(19) 95678-9012",
+            "sobre": ""
         ],
         [
             "nome": "Talheres Import",
             "nicho": "Cozinha",
-            "imagem": "cozinha"
+            "imagem": "cozinha",
+            "endereco": "Rua das Palmeiras, 654 - Setor Bueno, Goiânia - GO, CEP 70000-000",
+            "telefone": "(19) 96789-0123",
+            "sobre": ""
         ],
         [
             "nome": "La Plata",
             "nicho": "Semijoias",
-            "imagem": "semijoias"
+            "imagem": "semijoias",
+            "endereco": "Travessa das Violetas, 321 - Vila Nova, Porto Alegre - RS, CEP 90000-000",
+            "telefone": "(19) 97890-1234",
+            "sobre": ""
         ],
         [
             "nome": "Kapbom",
             "nicho": "Eletrônicos",
-            "imagem": "eletronicos"
+            "imagem": "eletronicos",
+            "endereco": "Avenida Central, 987 - Centro, Brasília - DF, CEP 70000-000",
+            "telefone": "(19) 98901-2345",
+            "sobre": ""
         ],
         [
             "nome": "Knup",
             "nicho": "Eletrônicos",
-            "imagem": "eletronicos"
+            "imagem": "eletronicos",
+            "endereco": "Rua dos Ipês, 654 - Jardim das Flores, Salvador - BA, CEP 40000-000",
+            "telefone": "(19) 99012-3456",
+            "sobre": ""
         ],
         [
             "nome": "Água pura",
             "nicho": "Bebidas",
-            "imagem": "bebidas"
+            "imagem": "bebidas",
+            "endereco": "Praça da República, 321 - Centro, Recife - PE, CEP 50000-000",
+            "telefone": "(67) 90123-4567",
+            "sobre": ""
         ]
     ]
 

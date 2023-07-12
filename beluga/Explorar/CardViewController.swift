@@ -28,28 +28,23 @@ class CardViewController: UIViewController {
             novoFornecedor.nome = fornecedor["nome"]
             novoFornecedor.nicho = fornecedor["nicho"]
             novoFornecedor.imagem = fornecedor["imagem"]
+            novoFornecedor.telefone = fornecedor["telefone"]
+            novoFornecedor.endereco = fornecedor["endereco"]
+            novoFornecedor.sobre = fornecedor["sobre"]
             if !novoFornecedor.isInserted {
                 (UIApplication.shared.delegate as! AppDelegate).saveContext()
             }
         }
         
         fornecedorGlobal = fetchFornecedores()
-        print("-------------------------")
-        for i in 0...8{
-            print(fornecedorGlobal[i].nome ?? 0)
-        }
-        print("-------------------------")
          
     }
     
     func fetchFornecedores() -> [Fornecedor] {
         //Fetch the data from Core Data to display in the tableView
-
         do {
             let request = Fornecedor.fetchRequest() as NSFetchRequest<Fornecedor>
             let fornecedor = try context.fetch(request)
-
-            //print(fornecedor)
             
             return fornecedor
         }
@@ -145,8 +140,14 @@ extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
         if indexPath.section == 2 {
             if indexPath.row < 10 && indexPath.row > -1 {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: "cardFornecedor")
-                self.present(vc, animated: true)
+                if let vc = storyboard.instantiateViewController(withIdentifier: "cardFornecedor") as? ViewControllerFornecedor {
+                    
+                    vc.n = indexPath.row
+                    vc.fornecedorGlobal = fornecedorGlobal
+                    
+                    self.present(vc, animated: true)
+                    
+                }
             }
         }
     }
