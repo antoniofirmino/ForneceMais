@@ -15,6 +15,8 @@
 		32A9C9862A55A0B800C6181F /* ListaFornecedoresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32A9C9842A55A0B800C6181F /* ListaFornecedoresViewController.xib */; };
 		32A9C9892A55A16500C6181F /* CelulaFornecedoresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A9C9872A55A16500C6181F /* CelulaFornecedoresTableViewCell.swift */; };
 		32A9C98A2A55A16500C6181F /* CelulaFornecedoresTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32A9C9882A55A16500C6181F /* CelulaFornecedoresTableViewCell.xib */; };
+		C004ACC22A5DCCB700C714F9 /* SubTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C004ACC02A5DCCB700C714F9 /* SubTitleTableViewCell.swift */; };
+		C004ACC32A5DCCB700C714F9 /* SubTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C004ACC12A5DCCB700C714F9 /* SubTitleTableViewCell.xib */; };
 		C01775882A56DB2C00620F6F /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01775862A56DB2C00620F6F /* SecondTableViewCell.swift */; };
 		C01775892A56DB2C00620F6F /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C01775872A56DB2C00620F6F /* SecondTableViewCell.xib */; };
 		C09168AF2A534290002F7794 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09168AE2A534290002F7794 /* Course.swift */; };
@@ -50,6 +52,8 @@
 		32A9C9842A55A0B800C6181F /* ListaFornecedoresViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaFornecedoresViewController.xib; sourceTree = "<group>"; };
 		32A9C9872A55A16500C6181F /* CelulaFornecedoresTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelulaFornecedoresTableViewCell.swift; sourceTree = "<group>"; };
 		32A9C9882A55A16500C6181F /* CelulaFornecedoresTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CelulaFornecedoresTableViewCell.xib; sourceTree = "<group>"; };
+		C004ACC02A5DCCB700C714F9 /* SubTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleTableViewCell.swift; sourceTree = "<group>"; };
+		C004ACC12A5DCCB700C714F9 /* SubTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubTitleTableViewCell.xib; sourceTree = "<group>"; };
 		C01775862A56DB2C00620F6F /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
 		C01775872A56DB2C00620F6F /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
 		C09168AE2A534290002F7794 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 				C0FC0E462A54AC4D00BF7955 /* ItensCollectionViewCell.xib */,
 				C01775862A56DB2C00620F6F /* SecondTableViewCell.swift */,
 				C01775872A56DB2C00620F6F /* SecondTableViewCell.xib */,
+				C004ACC02A5DCCB700C714F9 /* SubTitleTableViewCell.swift */,
+				C004ACC12A5DCCB700C714F9 /* SubTitleTableViewCell.xib */,
 			);
 			path = Explorar;
 			sourceTree = "<group>";
@@ -261,6 +267,7 @@
 				C5B8720A2A4DA62B009B5BF3 /* Main.storyboard in Resources */,
 				FB8C22B52A58429000BCFB30 /* CardViewController.xib in Resources */,
 				32A9C9862A55A0B800C6181F /* ListaFornecedoresViewController.xib in Resources */,
+				C004ACC32A5DCCB700C714F9 /* SubTitleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +287,7 @@
 				C01775882A56DB2C00620F6F /* SecondTableViewCell.swift in Sources */,
 				C536C00F2A5C2ED5009A8093 /* BuscarCollectionViewCell.swift in Sources */,
 				C09168AF2A534290002F7794 /* Course.swift in Sources */,
+				C004ACC22A5DCCB700C714F9 /* SubTitleTableViewCell.swift in Sources */,
 				C536C0112A5C317A009A8093 /* BuscarViewController.swift in Sources */,
 				32A9C9852A55A0B800C6181F /* ListaFornecedoresViewController.swift in Sources */,
 				C5B872032A4DA62B009B5BF3 /* AppDelegate.swift in Sources */,
