@@ -22,18 +22,22 @@ class CardViewController: UIViewController {
         listCardTableView.dataSource = self
         listCardTableView.delegate = self
         listCardTableView.register(UINib(nibName: "FornecedorTableViewCell", bundle: nil), forCellReuseIdentifier: "FornecedorTableViewCell")
+        listCardTableView.register(UINib(nibName: "SubTitleTableViewCell", bundle: nil), forCellReuseIdentifier: "SubTitleTableViewCell")
         listCardTableView.register(UINib(nibName: "SecondTableViewCell", bundle: nil), forCellReuseIdentifier: "SecondTableViewCell")
+       
     }
 }
 
 extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
+            return 1
+        } else if section == 1 {
             return 1
         } else {
             return 10
@@ -50,7 +54,12 @@ extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
                 fatalError()
             }
             return cell
-        } else {
+        } else if indexPath.section == 1 {
+            guard let labelCell = tableView.dequeueReusableCell(withIdentifier: "SubTitleTableViewCell", for: indexPath) as? SubTitleTableViewCell else {
+                fatalError()
+            }
+            return labelCell
+        }else {
             print(indexPath)
             guard let cellCostumized = tableView.dequeueReusableCell(withIdentifier: "SecondTableViewCell", for: indexPath) as? SecondTableViewCell else {
                 fatalError()
@@ -60,22 +69,22 @@ extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
         
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if section == 1 {
-            return 25
-        } else {
-            return 0
-        }
-    }
-    
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        if section == 1 {
-            return UIView()
-        }
-        return nil
-    }
-    
+//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        if section == 1 {
+//            return 25
+//        } else {
+//            return 0
+//        }
+//    }
+//    
+//    
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        if section == 1 {
+//            return UIView()
+//        }
+//        return nil
+//    }
+//    
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
            let spacing: CGFloat = 10 // Defina o valor do espaçamento desejado

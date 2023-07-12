@@ -13,6 +13,9 @@ class SecondTableViewCell: UITableViewCell {
     @IBOutlet weak var cardStarsTableCell: UIImageView!
     @IBOutlet weak var fornecedorNameTableCell: UILabel!
     @IBOutlet weak var imageCardTableCell: UIImageView!
+    @IBOutlet weak var cardView: UIView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,6 +25,8 @@ class SecondTableViewCell: UITableViewCell {
         cardStarsTableCell.image = UIImage(named: "Frame 21")
         fornecedorNameTableCell.text = "Fornecedor 1"
         imageCardTableCell.image = UIImage(named: "Frutas")
+        cardView.layer.cornerRadius = 14
+        cardView.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
