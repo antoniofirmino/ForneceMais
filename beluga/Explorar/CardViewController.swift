@@ -10,6 +10,7 @@ import CoreData
 
 class CardViewController: UIViewController {
     
+    
     @IBOutlet weak var listCardTableView: UITableView!
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -22,6 +23,14 @@ class CardViewController: UIViewController {
         title = "Explorar"
         navigationController?.navigationBar.prefersLargeTitles = true
         
+        let fetchRequest1: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Fornecedor")
+            let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest1)
+            do {
+              try context.execute(deleteRequest)
+            } catch let error as NSError {
+              // TODO: handle the error
+            }
+        
         
         for fornecedor in AppDelegate.ListaDeFornecedores {
             let novoFornecedor = Fornecedor(context: context)
@@ -32,21 +41,24 @@ class CardViewController: UIViewController {
             novoFornecedor.endereco = fornecedor["endereco"]
             novoFornecedor.sobre = fornecedor["sobre"]
             novoFornecedor.estrelas = fornecedor["estrelas"]
+            novoFornecedor.salva = false
             if !novoFornecedor.isInserted {
                 (UIApplication.shared.delegate as! AppDelegate).saveContext()
             }
+            
+            
         }
         
         fornecedorGlobal = fetchFornecedores()
-         
+        
     }
     
-    func fetchFornecedores() -> [Fornecedor] {
+    
+    public func fetchFornecedores() -> [Fornecedor] {
         //Fetch the data from Core Data to display in the tableView
         do {
             let request = Fornecedor.fetchRequest() as NSFetchRequest<Fornecedor>
             let fornecedor = try context.fetch(request)
-            
             return fornecedor
         }
         catch {
@@ -62,6 +74,9 @@ class CardViewController: UIViewController {
         listCardTableView.register(UINib(nibName: "SecondTableViewCell", bundle: nil), forCellReuseIdentifier: "SecondTableViewCell")
        
     }
+    
+    
+    
 }
 
 extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
@@ -109,6 +124,11 @@ extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
             cellCostumized.nichoCardTableCell.text = fornecedorGlobal[indexPath.row + 3].nicho
             cellCostumized.imageCardTableCell.image = UIImage(named: fornecedorGlobal[indexPath.row + 3].imagem!)
             cellCostumized.cardStarsTableCell.image = UIImage(named: fornecedorGlobal[indexPath.row + 3].estrelas!)
+            if fornecedorGlobal[indexPath.row + 3].salva {
+                cellCostumized.saveButton.configuration?.image = UIImage(systemName: "bookmark.fill")
+            } else {
+                cellCostumized.saveButton.configuration?.image = UIImage(systemName: "bookmark")
+            }
             return cellCostumized
         }
         
@@ -121,15 +141,15 @@ extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
 //            return 0
 //        }
 //    }
-//    
-//    
+//
+//
 //    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 //        if section == 1 {
 //            return UIView()
 //        }
 //        return nil
 //    }
-//    
+//
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
            let spacing: CGFloat = 10 // Defina o valor do espaçamento desejado

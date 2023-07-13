@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -49,17 +50,38 @@
                                             <constraint firstAttribute="width" constant="80" id="LGP-kN-qNn"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1w5-zy-y9N">
+                                        <rect key="frame" x="269" y="33" width="25" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="chh-Xa-Rg6"/>
+                                            <constraint firstAttribute="height" constant="32" id="o8y-yB-dMQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="bookmark" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="medium"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" imagePadding="8" buttonSize="large">
+                                            <imageReference key="image" image="bookmark" catalog="system" symbolScale="large" variableValue="1"/>
+                                            <backgroundConfiguration key="background"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="semibold"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="storeDataFornecedor:" destination="gTV-IL-0wX" eventType="touchUpInside" id="R5C-UG-Gwo"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="dUa-X8-87m" firstAttribute="top" secondItem="A5W-Uf-AzU" secondAttribute="bottom" constant="-4" id="4g3-Qh-c0y"/>
                                     <constraint firstItem="A5W-Uf-AzU" firstAttribute="top" secondItem="IXT-eM-Yzv" secondAttribute="top" constant="8" id="Bkv-1y-Ygv"/>
+                                    <constraint firstAttribute="trailing" secondItem="1w5-zy-y9N" secondAttribute="trailing" constant="16" id="DUS-L9-35H"/>
                                     <constraint firstItem="Cph-dI-Nmo" firstAttribute="leading" secondItem="IXT-eM-Yzv" secondAttribute="leading" constant="16" id="Je3-lf-UHk"/>
                                     <constraint firstAttribute="trailing" secondItem="k9H-Jp-C96" secondAttribute="trailing" constant="16" id="Kpc-kR-faw"/>
                                     <constraint firstItem="dUa-X8-87m" firstAttribute="leading" secondItem="IXT-eM-Yzv" secondAttribute="leading" constant="12" id="LEW-Gy-GSf"/>
                                     <constraint firstItem="k9H-Jp-C96" firstAttribute="top" secondItem="IXT-eM-Yzv" secondAttribute="top" constant="44" id="Pbw-8Q-jM3"/>
                                     <constraint firstItem="A5W-Uf-AzU" firstAttribute="leading" secondItem="IXT-eM-Yzv" secondAttribute="leading" constant="16" id="b4O-Xe-obv"/>
-                                    <constraint firstItem="dUa-X8-87m" firstAttribute="bottom" secondItem="k9H-Jp-C96" secondAttribute="bottom" id="ey3-V4-iu9"/>
                                     <constraint firstItem="Cph-dI-Nmo" firstAttribute="top" secondItem="dUa-X8-87m" secondAttribute="bottom" constant="8" id="gKg-AU-blX"/>
                                 </constraints>
                             </view>
@@ -98,6 +120,7 @@
                 <outlet property="forncedorNameCollectionCell" destination="A5W-Uf-AzU" id="mcL-st-Pxu"/>
                 <outlet property="imagemDestaque" destination="2fw-vV-Ved" id="rW0-Jh-d7o"/>
                 <outlet property="nichoCollectionCell" destination="Cph-dI-Nmo" id="n5s-z5-L41"/>
+                <outlet property="saveButton" destination="1w5-zy-y9N" id="h6G-o4-oj5"/>
                 <outlet property="starsCollectionCell" destination="dUa-X8-87m" id="aev-ca-NlH"/>
             </connections>
             <point key="canvasLocation" x="-178.62595419847327" y="94.366197183098592"/>
