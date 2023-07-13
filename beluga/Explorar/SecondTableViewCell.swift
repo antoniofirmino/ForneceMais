@@ -25,6 +25,7 @@ class SecondTableViewCell: UITableViewCell {
         cardStarsTableCell.image = UIImage(named: "Frame 21")
         fornecedorNameTableCell.text = "Fornecedor 1"
         imageCardTableCell.image = UIImage(named: "Frutas")
+        imageCardTableCell.layer.cornerRadius = 14
         cardView.layer.cornerRadius = 14
         cardView.clipsToBounds = true
     }

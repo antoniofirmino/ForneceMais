@@ -38,82 +38,92 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         [
             "nome": "Calce Bem",
             "nicho": "Calçados",
-            "imagem": "roupas",
+            "imagem": "Calce Bem",
             "endereco": "Rua das Flores, 123 - Centro, São Paulo - SP, CEP 01000-000",
             "telefone": "(11) 91234-5678",
-            "sobre": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            "sobre": "Conheça a Calce bem sua fornecedora de calçados de qualidade. Com um catálogo abrangente, oferecemos uma ampla seleçãode sapatos para todas as ocasiões. \nTrabalhamos com marcas renomadas, paragarantir conforto e estilo em cada par. \nConte conosco para ter os melhores \nprodutos para sua loja ou negócio.",
+            "estrelas": "Estrela5"
         ],
         [
             "nome": "Valentino Carnes",
             "nicho": "Alimentos",
-            "imagem": "alimentos",
+            "imagem": "Valentino Carnes",
             "endereco": "Avenida Beira-Mar, 456 - Praia de Iracema, Fortaleza - CE, CEP 60000-000",
             "telefone": "(11) 992345-6789",
-            "sobre": ""
+            "sobre": "Seu fornecedor confiável de carnes de \nqualidade. Especializados em oferecer \ncortes suculentos e frescos, fornecemos \ngrande variedade de opções para atender \nàs suas necessidades gastronômicas. \nNossos produtos são cuidadosamente \nselecionados garantindo sabor e qualidadeCexcepcionais. Conte com a Valentino \nCarnes para fornecer as melhores carnes \npara o seu estabelecimento ou negócio, \ncom entrega pontual e um serviço \nimpecável.",
+            "estrelas": "Estrela5"
         ],
         [
-            "nome": "Dal Santo",
+            "nome": "Borcelle",
             "nicho": "Alimentos",
-            "imagem": "alimentos",
+            "imagem": "Borcelle",
             "endereco": "Travessa do Sol, 789 - Jardim Botânico, Curitiba - PR, CEP 80000-000",
             "telefone": "(91) 3456-7890",
-            "sobre": ""
+            "sobre": "",
+            "estrelas": "Estrela5"
         ],
         [
-            "nome": "Uliana",
+            "nome": "Lira & Cia",
             "nicho": "Alimentos",
-            "imagem": "alimentos",
+            "imagem": "Lira e cia",
             "endereco": "Rua dos Pássaros, 321 - Jardim das Acácias, Belo Horizonte - MG, CEP 30000-000",
             "telefone": "(11) 94567-8901",
-            "sobre": ""
+            "sobre": "",
+            "estrelas": "Estrela5"
         ],
         [
-            "nome": "Afia Fácil",
-            "nicho": "Cozinha",
-            "imagem": "cozinha",
+            "nome": "Aurora",
+            "nicho": "Semijóias",
+            "imagem": "Aurora",
             "endereco": "Avenida da Liberdade, 987 - Copacabana, Rio de Janeiro - RJ, CEP 20000-000",
             "telefone": "(19) 95678-9012",
-            "sobre": ""
+            "sobre": "",
+            "estrelas": "Estrela5"
         ],
         [
-            "nome": "Talheres Import",
-            "nicho": "Cozinha",
-            "imagem": "cozinha",
+            "nome": "Lobo Sneakers",
+            "nicho": "Calçados",
+            "imagem": "Lobo",
             "endereco": "Rua das Palmeiras, 654 - Setor Bueno, Goiânia - GO, CEP 70000-000",
             "telefone": "(19) 96789-0123",
-            "sobre": ""
+            "sobre": "",
+            "estrelas": "Estrela4"
         ],
         [
-            "nome": "La Plata",
-            "nicho": "Semijoias",
-            "imagem": "semijoias",
+            "nome": "Bijou",
+            "nicho": "Semijóias",
+            "imagem": "Bijou",
             "endereco": "Travessa das Violetas, 321 - Vila Nova, Porto Alegre - RS, CEP 90000-000",
             "telefone": "(19) 97890-1234",
-            "sobre": ""
+            "sobre": "",
+            "estrelas": "Estrela4"
         ],
         [
-            "nome": "Kapbom",
+            "nome": "Albuquerque Eletrônicos",
             "nicho": "Eletrônicos",
-            "imagem": "eletronicos",
+            "imagem": "Albuquerque",
             "endereco": "Avenida Central, 987 - Centro, Brasília - DF, CEP 70000-000",
             "telefone": "(19) 98901-2345",
-            "sobre": ""
+            "sobre": "",
+            "estrelas": "Estrela4"
         ],
         [
-            "nome": "Knup",
+            "nome": "Mundo da Computação",
             "nicho": "Eletrônicos",
-            "imagem": "eletronicos",
+            "imagem": "Mundo da Computação",
             "endereco": "Rua dos Ipês, 654 - Jardim das Flores, Salvador - BA, CEP 40000-000",
             "telefone": "(19) 99012-3456",
-            "sobre": ""
+            "sobre": "",
+            "estrelas": "Estrela4"
         ],
         [
-            "nome": "Água pura",
-            "nicho": "Bebidas",
-            "imagem": "bebidas",
+            "nome": "Estela Duarte",
+            "nicho": "Roupas",
+            "imagem": "Estela",
             "endereco": "Praça da República, 321 - Centro, Recife - PE, CEP 50000-000",
             "telefone": "(67) 90123-4567",
-            "sobre": ""
+            "sobre": "",
+            "estrelas": "Estrela4"
         ]
     ]
 

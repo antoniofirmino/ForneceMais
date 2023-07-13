@@ -42,7 +42,7 @@ class FornecedorTableViewCell: UITableViewCell {
 
 extension FornecedorTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -52,8 +52,9 @@ extension FornecedorTableViewCell: UICollectionViewDataSource, UICollectionViewD
             fatalError()
         }
         countryCell.forncedorNameCollectionCell.text = listaFornecedores[indexPath.row].nome
-        //countryCell.starsCollectionCell.image = 
+        countryCell.starsCollectionCell.image = UIImage(named: listaFornecedores[indexPath.row].estrelas!)
         countryCell.nichoCollectionCell.text = listaFornecedores[indexPath.row].nicho
+        countryCell.imagemDestaque.image = UIImage(named: listaFornecedores[indexPath.row].imagem!)
         return countryCell
     }
     

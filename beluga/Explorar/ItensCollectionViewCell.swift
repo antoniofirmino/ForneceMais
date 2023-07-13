@@ -9,6 +9,7 @@ import UIKit
 
 class ItensCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var imagemDestaque: UIImageView!
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var nichoCollectionCell: UILabel!
     @IBOutlet weak var starsCollectionCell: UIImageView!

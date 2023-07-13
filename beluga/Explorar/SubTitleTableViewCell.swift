@@ -15,7 +15,7 @@ class SubTitleTableViewCell: UITableViewCell {
         // Initialization code
         
         
-        subTitle.text = "Seção Fornecedores"
+        subTitle.text = "Mais acessados"
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

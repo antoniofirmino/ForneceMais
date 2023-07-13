@@ -2,6 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22F66" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Fornecedor" representedClassName="Fornecedor" syncable="YES" codeGenerationType="class">
         <attribute name="endereco" optional="YES" attributeType="String"/>
+        <attribute name="estrelas" optional="YES" attributeType="String"/>
         <attribute name="imagem" optional="YES" attributeType="String"/>
         <attribute name="nicho" optional="YES" attributeType="String"/>
         <attribute name="nome" optional="YES" attributeType="String"/>

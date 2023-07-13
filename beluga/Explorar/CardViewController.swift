@@ -31,6 +31,7 @@ class CardViewController: UIViewController {
             novoFornecedor.telefone = fornecedor["telefone"]
             novoFornecedor.endereco = fornecedor["endereco"]
             novoFornecedor.sobre = fornecedor["sobre"]
+            novoFornecedor.estrelas = fornecedor["estrelas"]
             if !novoFornecedor.isInserted {
                 (UIApplication.shared.delegate as! AppDelegate).saveContext()
             }
@@ -75,7 +76,7 @@ extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
         } else if section == 1 {
             return 1
         } else {
-            return 10
+            return 7
         }
         
     }
@@ -104,9 +105,10 @@ extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
             guard let cellCostumized = tableView.dequeueReusableCell(withIdentifier: "SecondTableViewCell", for: indexPath) as? SecondTableViewCell else {
                 fatalError()
             }
-            cellCostumized.fornecedorNameTableCell.text = fornecedorGlobal[indexPath.row].nome
-            cellCostumized.nichoCardTableCell.text = fornecedorGlobal[indexPath.row].nicho
-            cellCostumized.imageCardTableCell.image = UIImage(named: fornecedorGlobal[indexPath.row].imagem!)
+            cellCostumized.fornecedorNameTableCell.text = fornecedorGlobal[indexPath.row + 3].nome
+            cellCostumized.nichoCardTableCell.text = fornecedorGlobal[indexPath.row + 3].nicho
+            cellCostumized.imageCardTableCell.image = UIImage(named: fornecedorGlobal[indexPath.row + 3].imagem!)
+            cellCostumized.cardStarsTableCell.image = UIImage(named: fornecedorGlobal[indexPath.row + 3].estrelas!)
             return cellCostumized
         }
         
@@ -137,12 +139,15 @@ extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
        }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 2 {
-            if indexPath.row < 10 && indexPath.row > -1 {
+        if indexPath.section == 0 {
+            
+        }
+        else if indexPath.section == 2 {
+            if indexPath.row < 7 && indexPath.row > -1 {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 if let vc = storyboard.instantiateViewController(withIdentifier: "cardFornecedor") as? ViewControllerFornecedor {
                     
-                    vc.n = indexPath.row
+                    vc.n = indexPath.row  + 3
                     vc.fornecedorGlobal = fornecedorGlobal
                     
                     self.present(vc, animated: true)
