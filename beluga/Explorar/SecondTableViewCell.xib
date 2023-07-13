@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -52,13 +51,13 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0f-rL-lcZ">
-                                        <rect key="frame" x="307" y="33" width="47" height="35"/>
+                                        <rect key="frame" x="308" y="34" width="47" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" imagePadding="0.0">
-                                            <imageReference key="image" image="bookmark" catalog="system" symbolScale="large"/>
-                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default" weight="medium"/>
-                                        </buttonConfiguration>
+                                        <buttonConfiguration key="configuration" style="plain" image="bookmark" catalog="system"/>
+                                        <connections>
+                                            <action selector="storeDataFornecedor:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rgf-vI-vQ1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -100,6 +99,7 @@
                 <outlet property="fornecedorNameTableCell" destination="XNP-Qh-ZKb" id="rvf-th-BMu"/>
                 <outlet property="imageCardTableCell" destination="XfC-Ap-iQn" id="Sim-MS-HHm"/>
                 <outlet property="nichoCardTableCell" destination="f6W-QE-Fyi" id="pYa-OY-uTw"/>
+                <outlet property="saveButton" destination="I0f-rL-lcZ" id="Ccj-wQ-uCb"/>
             </connections>
             <point key="canvasLocation" x="248.85496183206106" y="51.408450704225352"/>
         </tableViewCell>

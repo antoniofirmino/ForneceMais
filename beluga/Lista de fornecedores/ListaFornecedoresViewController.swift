@@ -6,69 +6,78 @@
 //
 
 import UIKit
+import CoreData
 
 class ListaFornecedoresViewController: UIViewController {
-
+    var getFornecedor = [Fornecedor]()
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     @IBOutlet weak var TableViewFornecedores: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         title = "Fornecedores salvos"
         navigationItem.largeTitleDisplayMode = .never
-        //navigationController?.navigationBar.prefersLargeTitles = false
+        
+        do {
+            let request = Fornecedor.fetchRequest() as NSFetchRequest<Fornecedor>
+
+            request.predicate = NSPredicate(format: "salva == %@", NSNumber(value: true))
+            getFornecedor = try context.fetch(request)
+            
+            
+        } catch {
+            fatalError()
+        }
+        
     }
     private func setupTableView() {
         TableViewFornecedores.dataSource = self
         TableViewFornecedores.delegate = self
-        TableViewFornecedores.register(UINib(nibName: "CelulaFornecedoresTableViewCell", bundle: nil), forCellReuseIdentifier: "CelulaFornecedoresTableViewCell")
+        TableViewFornecedores.register(UINib(nibName: "SecondTableViewCell", bundle: nil), forCellReuseIdentifier: "SecondTableViewCell")
         
     }
-
-
-
 }
 
 extension ListaFornecedoresViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Fornecedores.count
+        return getFornecedor.count
     }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CelulaFornecedoresTableViewCell", for: indexPath) as? CelulaFornecedoresTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SecondTableViewCell", for: indexPath) as? SecondTableViewCell
         else {
             fatalError()
         }
-        cell.initData(Nome: Fornecedores[indexPath.row]["name"]!  , Nicho: Fornecedores[indexPath.row]["nicho"]!, Imagem: UIImage(named : Fornecedores[indexPath.row]["image"]!)!)
+        //cell.initData(Nome: getFornecedor[indexPath.row].nome!  , Nicho: getFornecedor[indexPath.row].nicho!, Imagem: UIImage(named : "alimentos")!)
+        
+        cell.fornecedorNameTableCell.text = getFornecedor[indexPath.row].nome
+        cell.nichoCardTableCell.text = getFornecedor[indexPath.row].nicho
+        cell.imageCardTableCell.image = UIImage(named: getFornecedor[indexPath.row].imagem!)
+        if getFornecedor[indexPath.row].salva {
+            cell.saveButton.configuration?.image = UIImage(systemName: "bookmark.fill")
+        } else {
+            cell.saveButton.configuration?.image = UIImage(systemName: "bookmark")
+        }
+
         return cell
+        
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
-            if indexPath.row > -1 && indexPath.row < 10{
-                let next = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "cardFornecedor")
-                self.navigationController?.present(next, animated: true)
+            if indexPath.row < getFornecedor.count && indexPath.row > -1 {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                if let vc = storyboard.instantiateViewController(withIdentifier: "cardFornecedor") as? ViewControllerFornecedor {
+                    
+                    vc.n = indexPath.row
+                    vc.fornecedorGlobal = getFornecedor
+                    
+                    self.present(vc, animated: true)
+                    
+                }
             }
         }
     }
 
 }
-
-
-let Fornecedores = [
-    [
-        "name": "Ricardo",
-        "nicho":"Bebidas",
-        "image": "Frutas"
-    ],
-    
-    [
-        "name": "Joao",
-        "nicho":"Comida",
-        "image": "Frutas"
-    ],
-    
-    [
-        "name": "Renan",
-        "nicho":"Peças",
-        "image": "Frutas"
-    ]
-]
