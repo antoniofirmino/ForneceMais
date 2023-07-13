@@ -66,5 +66,13 @@ extension FornecedorTableViewCell: UICollectionViewDataSource, UICollectionViewD
         listaFornecedores = fornecedores
     }
   
-}
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.section == 0 {
+            if indexPath.row < 3 && indexPath.row > -1 {
+                CardViewController().chamarView(indexPath.row, fornec: listaFornecedores)
+                }
+            }
+        }
+    }
+
 

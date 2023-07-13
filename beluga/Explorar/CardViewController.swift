@@ -139,10 +139,7 @@ extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
        }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 0 {
-            
-        }
-        else if indexPath.section == 2 {
+        if indexPath.section == 2 {
             if indexPath.row < 7 && indexPath.row > -1 {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 if let vc = storyboard.instantiateViewController(withIdentifier: "cardFornecedor") as? ViewControllerFornecedor {
@@ -156,5 +153,26 @@ extension CardViewController:   UITableViewDataSource, UITableViewDelegate {
             }
         }
     }
+    
+    func chamarView(_ numero: Int, fornec: [Fornecedor]){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let vc1 = storyboard.instantiateViewController(withIdentifier: "cardFornecedor") as? ViewControllerFornecedor {
+            
+            vc1.n = numero
+            vc1.fornecedorGlobal = fornec
+            
+            getTopMostViewController()?.present(vc1, animated: true, completion: nil)
+            
+        }
+    }
+    func getTopMostViewController() -> UIViewController? {
+            var topMostViewController = UIApplication.shared.keyWindow?.rootViewController
+
+            while let presentedViewController = topMostViewController?.presentedViewController {
+                topMostViewController = presentedViewController
+            }
+
+            return topMostViewController
+        }
     
 }
