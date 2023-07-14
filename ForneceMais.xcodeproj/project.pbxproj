@@ -10,6 +10,8 @@
 		1E1E5DD62A543F33006014DD /* CommentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E5DD52A543F33006014DD /* CommentCard.swift */; };
 		1E1E5DDA2A5459DC006014DD /* ViewControllerFornecedor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E5DD92A5459DC006014DD /* ViewControllerFornecedor.swift */; };
 		1E5BF8C82A55B67E004FA3B8 /* ComentariosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BF8C72A55B67E004FA3B8 /* ComentariosTableViewController.swift */; };
+		1ED424612A60C28B000630CC /* ListaFornecedoresBuscaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4245F2A60C28B000630CC /* ListaFornecedoresBuscaViewController.swift */; };
+		1ED424622A60C28B000630CC /* ListaFornecedoresBuscaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED424602A60C28B000630CC /* ListaFornecedoresBuscaViewController.xib */; };
 		1EDB483E2A559C3800E344E3 /* CommentCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EDB483D2A559C3800E344E3 /* CommentCard.xib */; };
 		32A9C9852A55A0B800C6181F /* ListaFornecedoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A9C9832A55A0B800C6181F /* ListaFornecedoresViewController.swift */; };
 		32A9C9862A55A0B800C6181F /* ListaFornecedoresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32A9C9842A55A0B800C6181F /* ListaFornecedoresViewController.xib */; };
@@ -44,6 +46,8 @@
 		1E1E5DD52A543F33006014DD /* CommentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCard.swift; sourceTree = "<group>"; };
 		1E1E5DD92A5459DC006014DD /* ViewControllerFornecedor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFornecedor.swift; sourceTree = "<group>"; };
 		1E5BF8C72A55B67E004FA3B8 /* ComentariosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComentariosTableViewController.swift; sourceTree = "<group>"; };
+		1ED4245F2A60C28B000630CC /* ListaFornecedoresBuscaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaFornecedoresBuscaViewController.swift; sourceTree = "<group>"; };
+		1ED424602A60C28B000630CC /* ListaFornecedoresBuscaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaFornecedoresBuscaViewController.xib; sourceTree = "<group>"; };
 		1EDB483D2A559C3800E344E3 /* CommentCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCard.xib; sourceTree = "<group>"; };
 		32A9C9832A55A0B800C6181F /* ListaFornecedoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaFornecedoresViewController.swift; sourceTree = "<group>"; };
 		32A9C9842A55A0B800C6181F /* ListaFornecedoresViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaFornecedoresViewController.xib; sourceTree = "<group>"; };
@@ -175,6 +179,8 @@
 				C536C0102A5C317A009A8093 /* BuscarViewController.swift */,
 				C536C0142A5C433D009A8093 /* Categorias.swift */,
 				C536C0162A5C53E4009A8093 /* SearchViewController.swift */,
+				1ED4245F2A60C28B000630CC /* ListaFornecedoresBuscaViewController.swift */,
+				1ED424602A60C28B000630CC /* ListaFornecedoresBuscaViewController.xib */,
 			);
 			path = Buscar;
 			sourceTree = "<group>";
@@ -257,6 +263,7 @@
 				C5B8720A2A4DA62B009B5BF3 /* Main.storyboard in Resources */,
 				FB8C22B52A58429000BCFB30 /* CardViewController.xib in Resources */,
 				32A9C9862A55A0B800C6181F /* ListaFornecedoresViewController.xib in Resources */,
+				1ED424622A60C28B000630CC /* ListaFornecedoresBuscaViewController.xib in Resources */,
 				C004ACC32A5DCCB700C714F9 /* SubTitleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +277,7 @@
 			files = (
 				FB0AD7742A52F60D000B47BE /* ViewControllerConta.swift in Sources */,
 				1E1E5DD62A543F33006014DD /* CommentCard.swift in Sources */,
+				1ED424612A60C28B000630CC /* ListaFornecedoresBuscaViewController.swift in Sources */,
 				FB540A362A5C403C00A04568 /* BelugaData.xcdatamodeld in Sources */,
 				C0FC0E3F2A54894900BF7955 /* FornecedorTableViewCell.swift in Sources */,
 				C0FC0E472A54AC4D00BF7955 /* ItensCollectionViewCell.swift in Sources */,
@@ -436,7 +444,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 36ALF83777;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = beluga/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -467,7 +475,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 36ALF83777;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = beluga/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

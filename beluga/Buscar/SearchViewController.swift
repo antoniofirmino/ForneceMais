@@ -37,4 +37,39 @@ extension  SearchViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 172, height: 106)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.section == 0 {
+            if indexPath.row == 0 {
+                let myViewController = ListaFornecedoresBuscaViewController(nibName: "ListaFornecedoresBuscaViewController", bundle: nil)
+                myViewController.categoria = "Alimentos"
+                navigationController?.pushViewController(myViewController, animated: true)
+            }
+            if indexPath.row == 1 {
+                let myViewController = ListaFornecedoresBuscaViewController(nibName: "ListaFornecedoresBuscaViewController", bundle: nil)
+                myViewController.categoria = "Calçados"
+                navigationController?.pushViewController(myViewController, animated: true)
+            }
+            if indexPath.row == 2 {
+                let myViewController = ListaFornecedoresBuscaViewController(nibName: "ListaFornecedoresBuscaViewController", bundle: nil)
+                myViewController.categoria = "Cozinha"
+                navigationController?.pushViewController(myViewController, animated: true)
+            }
+            if indexPath.row == 3 {
+                let myViewController = ListaFornecedoresBuscaViewController(nibName: "ListaFornecedoresBuscaViewController", bundle: nil)
+                myViewController.categoria = "Eletrônicos"
+                navigationController?.pushViewController(myViewController, animated: true)
+            }
+            if indexPath.row == 4 {
+                let myViewController = ListaFornecedoresBuscaViewController(nibName: "ListaFornecedoresBuscaViewController", bundle: nil)
+                myViewController.categoria = "Roupas"
+                navigationController?.pushViewController(myViewController, animated: true)
+            }
+            if indexPath.row == 5 {
+                let myViewController = ListaFornecedoresBuscaViewController(nibName: "ListaFornecedoresBuscaViewController", bundle: nil)
+                myViewController.categoria = "Semijóias"
+                navigationController?.pushViewController(myViewController, animated: true)
+            }
+        }
+    }
 }
