@@ -11,6 +11,7 @@ import CoreData
 class ListaFornecedoresBuscaViewController: UIViewController {
     var getFornecedor = [Fornecedor]()
     var categoria: String? = nil
+    var textoBusca: String? = nil
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     @IBOutlet weak var TableViewFornecedores: UITableView!
@@ -25,6 +26,10 @@ class ListaFornecedoresBuscaViewController: UIViewController {
             
             if let nicho = categoria {
                 request.predicate = NSPredicate(format: "nicho == %@", nicho)
+            }
+            
+            if let busca = textoBusca {
+                request.predicate = NSPredicate(format: "nome contains[cd] %@ or nicho contains[cd] %@", busca, busca)
             }
             
             getFornecedor = try context.fetch(request)

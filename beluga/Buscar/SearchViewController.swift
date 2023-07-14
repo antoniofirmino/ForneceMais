@@ -9,12 +9,14 @@ import UIKit
 
 class  SearchViewController: UIViewController {
 
+    @IBOutlet weak var searchBarView: UISearchBar!
     @IBOutlet weak var buscaCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Busca"
         navigationController?.navigationBar.prefersLargeTitles = true
-
+        
+        searchBarView.delegate = self
         buscaCollectionView.dataSource = self
         buscaCollectionView.delegate = self
         buscaCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
@@ -30,6 +32,29 @@ extension  SearchViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BuscarCollectionViewCell", for: indexPath) as! BuscarCollectionViewCell
         cell.setup(with: categorias[indexPath.row])
         return cell
+    }
+}
+
+extension SearchViewController: UISearchBarDelegate {
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = true
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
+        searchBar.showsCancelButton = false
+        
+        let myViewController = ListaFornecedoresBuscaViewController(nibName: "ListaFornecedoresBuscaViewController", bundle: nil)
+        myViewController.textoBusca = searchBar.text
+        navigationController?.pushViewController(myViewController, animated: true)
+        
+        searchBar.text = ""
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = ""
+        searchBar.endEditing(true)
+        searchBar.showsCancelButton = false
     }
 }
 
